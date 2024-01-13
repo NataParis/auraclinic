@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,72 @@
       <div>Результаты</div>
       <div>Наши специалисты</div>
       <div>Сертификаты</div>
-      <div>Отзывы</div>
+
+      <div class="review">
+        <div class="review__titile-logo">
+          <img
+            class="review__logo"
+            src="./assets/images/logolotus.png"
+            alt="logo"
+          />
+          <h2 class="review__name">Отзывы</h2>
+        </div>
+        <div class="review__peoplesays">
+          <div class="review__firstperson">
+            <img
+              class="review__picture-one"
+              src="./assets/images/review_emptyblock.png.webp"
+              alt="first"
+            />
+            <p class="review__text-first">
+              профессионалы своего дела и прекрасные люди-ваши работники!
+              клиенты не только с города Назрань, но и далеко за пределами- и я
+              одна из них!Очень довольна!
+            </p>
+          </div>
+          <div class="review__secondperson">
+            <img
+              class="review__picture"
+              src="./assets/images/review_emptyblock.png.webp"
+              alt="second"
+            />
+            <p></p>
+          </div>
+          <div class="review__firdperson">
+            <img
+              class="review__picture"
+              src="./assets/images/review_emptyblock.png.webp"
+              alt="fird"
+            />
+            <p></p>
+          </div>
+        </div>
+        <button class="review__btn">Больше отзывов</button>
+        <div class="review__form">
+          <form class="review__form-form" action="#">
+            <label for="anonymous">Анонимно</label>
+            <input type="checkbox" id="anonymous" name="anonymous" />
+            <label for="username">Ваше имя:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Имя/Фамилия"
+            />
+
+            <label for="review">Ваш отзыв:</label>
+            <textarea
+              name="review"
+              id="review"
+              cols="60"
+              rows="5"
+              placeholder="Напишите пару слов о том,как прошел Ваш визит к нам."
+            ></textarea>
+            <button class="reviev__send" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+
       <div>Форма записи</div>
     </main>
     <footer>Подвал с контактами и соцсетями</footer>
