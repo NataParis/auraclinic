@@ -69,7 +69,7 @@
 .review .review__form-form {
   color: rgb(255, 255, 255);
 }
-.review .review__form-form .reviev__send {
+.review .review__form-form .review__send {
   display: flex;
   padding: 10px 20px;
   font-size: 16px;
