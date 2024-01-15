@@ -1,4 +1,4 @@
-@import '/assets/style/vars.scss';
+@import '../style/vars.scss';
 @font-face {
     font-family: 'Gilroy';
     src: url('/assets/fonts/Gilroy-Regular.ttf') format('truetype');
@@ -16,13 +16,105 @@ body {
     background-color: $colorlight;
     max-width: 100%;
 }
-.logopic {
-    width: 20vw;
-}
-h1 {
+h2 {
     color: $colordark;
     font-family: $font-gilroy;
+    font-size: 2vw;
 }
-main {
-    text-align: center;
+h3 {
+    color: $colordark;
+    font-family: $font-gilroy;
+    font-style: italic;
+    font-size: 1.2vw;
+    font-weight: lighter;
 }
+button {
+    width: 10vw;
+    height: 5vh;
+    background-color: $colordark;
+    border: none;
+    border-radius: 5cap;
+    font-size: 18px;
+    color: $colorlight;
+  }
+.topline {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    .logopic {
+        width: 20vw;
+        margin-top: 1rem;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .nav a {
+      padding-right: 2rem;
+      text-decoration: none;
+      font-family: $font-gilroy;
+      color: $colordark;
+      font-size: 18px;
+      font-weight: bolder;
+    }
+      .phone {
+        font-size: 20px;
+        font-weight: bolder;
+        color: $colordark;
+      }
+  }
+  .bannerpic {
+    width: 100vw;
+    max-height: 50vh;
+    margin-top: 1rem;
+  }
+
+.about {
+    display: flex;
+    margin: 3rem;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    .picabout {
+        border-radius: 2cap;
+        flex-basis: 40%;
+        max-height: 60vh;
+        max-width: 40vw;
+        flex-basis: 35%;
+    
+    }
+    .clinicscript {
+        font-size: 18px;
+        font-weight: lighter;
+        max-width: 50%;
+        text-align: center;
+        padding-left: 4rem;
+    }
+}
+.submit {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80vw;
+    min-height: 20vh;
+    border-radius: 4cap;
+    background-image: url(/assets/images/iStock-1200557416.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    color: $colordark;
+    font-family: $font-gilroy;
+    margin-left: 8rem;
+  }
+ 
+  .input-box {
+    display: flex;
+    gap: 3rem;
+    .inputname {
+        border: none;
+        border-radius: 2cap;
+        width: 15vw;
+        height: 6vh;
+       text-align: center;
+       font-style: italic;
+    }
+  }
+ 
