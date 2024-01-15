@@ -1,0 +1,28 @@
+@import '/assets/style/vars.scss';
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Kosans';
+    src: url('/assets/fonts/KosansDemoRegular-z8G8G.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $colorlight;
+    max-width: 100%;
+}
+.logopic {
+    width: 20vw;
+}
+h1 {
+    color: $colordark;
+    font-family: $font-gilroy;
+}
+main {
+    text-align: center;
+}
