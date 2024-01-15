@@ -1,0 +1,70 @@
+.footer {
+  font-family: "KosansRegular", sans-serif;
+}
+.footer__logo-image {
+  width: 300px;
+  height: 100px;
+}
+.footer__sections-list, .footer__services-list {
+  list-style: none;
+}
+.footer__contact-title, .footer__sections-title, .footer__services-title {
+  margin-bottom: 2.5rem;
+}
+.footer__disclaimer-text {
+  text-align: center;
+  margin-top: 100px;
+  font-size: large;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kosans";
+  src: url("/assets/fonts/KosansDemoRegular-z8G8G.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faeddd;
+  max-width: 100%;
+}
+
+.logopic {
+  width: 20vw;
+}
+
+h1 {
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+.footer {
+  font-family: "KosansRegular", sans-serif;
+  margin-top: 50px;
+}
+.footer__logo-image {
+  width: 300px;
+  height: 100px;
+}
+.footer__sections-list, .footer__services-list {
+  list-style: none;
+}
+.footer__contact-title, .footer__sections-title, .footer__services-title {
+  margin-bottom: 2.5rem;
+}
+.footer__disclaimer-text {
+  text-align: center;
+  margin-top: 100px;
+  font-size: large;
+}/*# sourceMappingURL=style.css.map */

@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "KosansRegular";
-  src: url("assets/fonts/Kosans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .footer {
   font-family: "KosansRegular", sans-serif;
 }
@@ -27,4 +15,4 @@
   text-align: center;
   margin-top: 100px;
   font-size: large;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=templates.css.map */

@@ -1,8 +1,13 @@
+@import 'vars';
+@import 'templates';
+
 @font-face {
-    font-family: 'KosansRegular';
-    src: url('assets/fonts/Kosans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Kosans';
+    src: url('/assets/fonts/KosansDemoRegular-z8G8G.ttf') format('truetype');
 }
 
 * {
@@ -10,11 +15,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: $colorlight;
+    max-width: 100%;
+}
+.logopic {
+    width: 20vw;
+}
+h1 {
+    color: $colordark;
+    font-family: $font-gilroy;
+}
+main {
+    text-align: center;
+}
+
 
 // Footer styles //
 
 .footer {
     font-family: 'KosansRegular', sans-serif;
+    margin-top: 50px;
 
     &__logo-image{
         width: 300px;
@@ -36,5 +57,3 @@
     }
 
 }
-
-
