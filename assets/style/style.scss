@@ -34,7 +34,7 @@ button {
     background-color: $colordark;
     border: none;
     border-radius: 5cap;
-    font-size: 18px;
+    font-size: 1.2em;
     color: $colorlight;
   }
 .topline {
@@ -83,9 +83,8 @@ button {
     
     }
     .clinicscript {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: lighter;
-        max-width: 50%;
         text-align: center;
         padding-left: 4rem;
     }
