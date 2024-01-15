@@ -3,19 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/style.css" />
-    <link rel="normaliser" href="/assets/normalize.css" />
+    <link rel="stylesheet" href="/style/style.css"/>
+    <link rel="normaliser" href="/assets/normalize.css"/>
+    <link rel="stylesheet" href="/style/bootstrap-grid.css"/>
     <title>AURAclinic</title>
   </head>
   <body>
     <header>Логотип с баннером</header>
-    <main>
-      <div>блок с описанием услуги 1 с ценой и картинкой</div>
-      <div>блок с описанием услуги 2 с ценой и картинкой</div>
-      <div>блок с описанием услуги 3 с ценой и картинкой</div>
-      <div>блок с описанием услуги 4 с ценой и картинкой</div>
-      <div>блок с описанием услуги 5 с ценой и картинкой</div>
-      <div>блок с описанием услуги 6 с ценой и картинкой</div>
+    <main class="container">
+      <div class="row">
+        <div class="col">
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">Endospheres Therapy</h2>
+            <img src="assets/images/kosmet1.jpg" alt="Endospheres Therapy Image" class="img-fluid mb-3" style="max-width: 100%;">
+            <p>Endospheres Therapy представляет собой уникальное решение для эффективного и безболезненного борьбы с целлюлитом, местными жировыми отложениями и признаками старения кожи. Методика основана на использовании компрессионной вибрации через вращающийся цилиндр с 50 силиконовыми сферами.</p>
+            <p>Эндосфера-терапия рекомендуется при наличии данных проблем:</p>
+            <ul class="list-group">
+                <li class="list-group-item">Целлюлит</li>
+                <li class="list-group-item">Избыточный вес</li>
+                <li class="list-group-item">Локальные жировые отложения</li>
+                <li class="list-group-item">Чувство усталости, тяжесть в ногах</li>
+                <li class="list-group-item">Снижение тургора кожи</li>
+                <li class="list-group-item">Постоянная отечность</li>
+                <li class="list-group-item">Венозные застои и застои лимфы</li>
+            </ul>
+            <h3>Цены</h3>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Название</th>
+                  <th>Стоимость</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ноги полностью</td>
+                  <td>5500</td>
+                </tr>
+                <tr>
+                  <td>Ноги до колен</td>
+                  <td>3200</td>
+                </tr>
+                <tr>
+                  <td>Руки полностью</td>
+                  <td>3500</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Глубокое бикини</td>
+                  <td>3500</td>
+                </tr>
+              </tfoot>
+            </table>
+          </article>
+        </div>
+      </div>
     </main>
     <footer>Подвал с контактами и соцсетями</footer>
   </body>
