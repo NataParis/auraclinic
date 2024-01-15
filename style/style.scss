@@ -1,5 +1,40 @@
+@font-face {
+    font-family: 'KosansRegular';
+    src: url('assets/fonts/Kosans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+// Footer styles //
+
+.footer {
+    font-family: 'KosansRegular', sans-serif;
+
+    &__logo-image{
+        width: 300px;
+        height: 100px;
+    }
+    &__sections-list,
+    &__services-list{
+        list-style: none;
+    }
+    &__contact-title,
+    &__sections-title,
+    &__services-title {
+        margin-bottom: 2.5rem;
+    }
+    &__disclaimer-text{
+        text-align: center;
+        margin-top: 100px;
+        font-size: large;
+    }
+
+}
+
+
