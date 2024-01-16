@@ -128,6 +128,7 @@ button {
   font-style: italic;
 }
 
+<<<<<<< HEAD
 .review {
   width: 100%;
   background-repeat: no-repeat;
@@ -202,6 +203,63 @@ button {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+=======
+/* Header */
+.header {
+  background-color: #FBEEDE;
+  /* Burger-list */
+}
+.header .header-block {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  padding: 1%;
+}
+.header .header-block .header-block__menu {
+  padding-top: 3%;
+}
+.header .header-block .header-block__menu .nav-link {
+  font-family: Gilroy SemiBold;
+  color: #551F25;
+  font-size: 1.6rem;
+}
+.header .header-block .header-block_logo {
+  width: 100%;
+}
+.header .header-block .header-block__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header .header-block .header-block__contacts .header-block__contacts_telephone {
+  font-family: Gilroy Bold;
+  color: #551F25;
+  font-size: 1.6rem;
+}
+.header .header-block .header-block__contacts .header-block__apps {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+}
+.header .header-block .header-block__contacts .header-block__apps .header-block_icon {
+  width: 2.7rem;
+}
+.header .dropdown .button {
+  border: none;
+  outline: none;
+  background-color: #FBEEDE;
+}
+.header .dropdown .dropdown_list {
+  width: 2rem;
+  color: #551F25;
+}
+.header .dropdown .dropdown_item {
+  font-family: Gilroy SemiBold;
+  color: #551F25;
+  font-size: 1.6rem;
+>>>>>>> master
 }
 
 .footer {
