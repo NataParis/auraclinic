@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Yellowtail&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Yellowtail&display=swap');
 
 
 
@@ -9,12 +9,12 @@
 }
 
 .review{
-   background-image: url(/assets/images/review_bg.jpeg);
+   
    width: 100%;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   padding-top: 5px;
+   padding-top: 10px;
    margin: 0 auto;
    
    
@@ -32,11 +32,7 @@
 
    }
    
-   .review__logo{
-    
-    max-width: 30%;
-    max-height: 100px;
-   }
+   
    .review__peoplesays{
     display: flex;
     justify-content: space-between;
@@ -47,15 +43,15 @@
     
 
     .review__firstperson{
-        display: grid;
+        max-width: 359px;
+max-height: 344px;
+border-radius: 22px;
+border: 1px;
+display: grid;
         color:rgb(119, 45, 45);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        .review__picture-one{
-            grid-column: 1/2;
-            grid-row: 1/2;
-            width: 100%;
-        }
+       
         .review__text-first{
             grid-column: 1/2;
             grid-row: 1/2;
@@ -64,7 +60,6 @@
             padding-top: 25px;
             margin: 0 auto;
         }
-        
     }
     
    }
@@ -97,4 +92,4 @@
     }
    }
 
-}
+} */
