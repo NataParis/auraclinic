@@ -1,22 +1,3 @@
-.footer {
-  font-family: "KosansRegular", sans-serif;
-}
-.footer__logo-image {
-  width: 300px;
-  height: 100px;
-}
-.footer__sections-list, .footer__services-list {
-  list-style: none;
-}
-.footer__contact-title, .footer__sections-title, .footer__services-title {
-  margin-bottom: 2.5rem;
-}
-.footer__disclaimer-text {
-  text-align: center;
-  margin-top: 100px;
-  font-size: large;
-}
-
 @font-face {
   font-family: "Gilroy";
   src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
@@ -74,9 +55,21 @@ button {
 }
 .topline .logopic {
   width: 20vw;
+  margin-top: 1rem;
+  padding-left: 0;
+  margin-left: 0;
 }
-
-h1 {
+.topline .nav a {
+  padding-right: 2rem;
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.topline .phone {
+  font-size: 20px;
+  font-weight: bolder;
   color: #400e19;
 }
 
@@ -132,15 +125,13 @@ h1 {
   width: 15vw;
   height: 6vh;
   text-align: center;
+  font-style: italic;
 }
 
 .footer {
   font-family: "KosansRegular", sans-serif;
   margin-top: 50px;
-}
-.footer__logo-image {
-  width: 300px;
-  height: 100px;
+  background-color: bisque;
 }
 .footer__sections-list, .footer__services-list {
   list-style: none;
@@ -148,14 +139,48 @@ h1 {
 }
 .footer__contact-title, .footer__sections-title, .footer__services-title {
   margin-bottom: 2.5rem;
+  padding-right: 2rem;
+  text-decoration: none;
   font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-size: 18px;
+  font-weight: bolder;
 }
 .footer__disclaimer-text {
   text-align: center;
   margin-top: 100px;
   font-size: large;
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-weight: bolder;
 }
 .footer__contact-info, .footer__sections, .footer__services {
   margin-top: 30px;
-  font-style: italic;
+}
+.footer__footer-social img {
+  max-width: 40px;
+}
+.footer__link {
+  color: gray;
+  text-decoration: none;
+}
+.footer__link .link:hover {
+  text-decoration: underline;
+}
+.footer__link .link:visited {
+  color: black;
+}
+
+.btn-custom {
+  background-color: #400e19;
+  color: #ffffff;
+  border: 3px solid #400e19;
+  height: 3vw;
+  font-size: 1em;
+}
+
+.btn-custom:hover {
+  background-color: #750921;
+  border-color: #750921;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
