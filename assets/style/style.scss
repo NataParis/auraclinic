@@ -10,6 +10,13 @@
     src: url('/assets/fonts/KosansDemoRegular-z8G8G.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'KosansRegular';
+    src: url('/assets/fonts/Kosans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,16 +51,24 @@ main {
     &__sections-list,
     &__services-list{
         list-style: none;
+        padding-left: 0;
     }
     &__contact-title,
     &__sections-title,
     &__services-title {
         margin-bottom: 2.5rem;
+        font-family: $font-gilroy;
     }
     &__disclaimer-text{
         text-align: center;
         margin-top: 100px;
         font-size: large;
+    }
+
+    &__contact-info,
+    &__sections,
+    &__services {
+        margin-top: 30px;
     }
 
 }

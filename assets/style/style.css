@@ -25,6 +25,12 @@
   font-family: "Kosans";
   src: url("/assets/fonts/KosansDemoRegular-z8G8G.ttf") format("truetype");
 }
+@font-face {
+  font-family: "KosansRegular";
+  src: url("/assets/fonts/Kosans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -59,12 +65,17 @@ main {
 }
 .footer__sections-list, .footer__services-list {
   list-style: none;
+  padding-left: 0;
 }
 .footer__contact-title, .footer__sections-title, .footer__services-title {
   margin-bottom: 2.5rem;
+  font-family: "Gilroy", sans-serif;
 }
 .footer__disclaimer-text {
   text-align: center;
   margin-top: 100px;
   font-size: large;
+}
+.footer__contact-info, .footer__sections, .footer__services {
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
