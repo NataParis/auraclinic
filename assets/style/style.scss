@@ -128,6 +128,67 @@ button {
     }
   }
 
+/* Header */
+.header {
+	background-color: #FBEEDE;
+	.header-block {
+		display: grid;
+		grid-template-columns: 25% 50% 25%;
+		width: 90%;
+		height: 90%;
+		margin: 0 auto;
+		padding: 1%;
+		.header-block__menu {
+			padding-top: 3%;
+			.nav-link {
+				font-family: Gilroy SemiBold;
+				color: #551F25;
+				font-size: 1.6rem;
+			}
+		}
+		.header-block_logo {
+			width: 100%;
+		}
+		.header-block__contacts {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			.header-block__contacts_telephone {
+				font-family: Gilroy Bold;
+				color: #551F25;
+				font-size: 1.6rem;
+			}
+			.header-block__apps {
+				display: flex;
+				justify-content: end;
+				gap: 1em;
+				.header-block_icon {
+					width: 2.7rem;
+				}
+			}
+			
+		}
+	}
+	/* Burger-list */
+	.dropdown {
+		.button {
+			border: none;
+			outline: none;
+			background-color: #FBEEDE;
+		}
+		.dropdown_list {
+			width: 2rem;
+			color: #551F25;
+		}
+		.dropdown_item {
+			font-family: Gilroy SemiBold;
+			color: #551F25;
+			font-size: 1.6rem;
+		}
+	}
+	
+}
+
 // Footer styles //
 
 .footer {
