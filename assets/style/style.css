@@ -47,32 +47,6 @@ button {
   color: #faeddd;
 }
 
-.topline {
-  display: flex;
-  width: 100vw;
-  justify-content: space-around;
-  align-items: center;
-}
-.topline .logopic {
-  width: 20vw;
-  margin-top: 1rem;
-  padding-left: 0;
-  margin-left: 0;
-}
-.topline .nav a {
-  padding-right: 2rem;
-  text-decoration: none;
-  font-family: "Gilroy", sans-serif;
-  color: #400e19;
-  font-size: 18px;
-  font-weight: bolder;
-}
-.topline .phone {
-  font-size: 20px;
-  font-weight: bolder;
-  color: #400e19;
-}
-
 .bannerpic {
   width: 100vw;
   max-height: 50vh;
@@ -131,26 +105,25 @@ button {
 /* Header */
 .header {
   background-color: #FBEEDE;
-  /* Burger-list */
+  margin-top: 1rem;
 }
 .header .header-block {
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 20% 65% 15%;
   width: 90%;
   height: 90%;
   margin: 0 auto;
-  padding: 1%;
 }
 .header .header-block .header-block__menu {
   padding-top: 3%;
 }
 .header .header-block .header-block__menu .nav-link {
   font-family: Gilroy SemiBold;
-  color: #551F25;
+  color: #400e19;
   font-size: 1.6rem;
 }
 .header .header-block .header-block_logo {
-  width: 100%;
+  width: 23vw;
 }
 .header .header-block .header-block__contacts {
   display: flex;
@@ -158,9 +131,10 @@ button {
   align-items: flex-end;
 }
 .header .header-block .header-block__contacts .header-block__contacts_telephone {
-  font-family: Gilroy Bold;
-  color: #551F25;
-  font-size: 1.6rem;
+  font-family: "Gilroy", sans-serif;
+  font-weight: bolder;
+  color: #400e19;
+  font-size: 1.5rem;
 }
 .header .header-block .header-block__contacts .header-block__apps {
   display: flex;
@@ -170,25 +144,33 @@ button {
 .header .header-block .header-block__contacts .header-block__apps .header-block_icon {
   width: 2.7rem;
 }
-.header .dropdown .button {
+
+/* Burger-list */
+.dropdown .button {
   border: none;
   outline: none;
   background-color: #FBEEDE;
 }
-.header .dropdown .dropdown_list {
+.dropdown .dropdown_list {
   width: 2rem;
-  color: #551F25;
+  color: #400e19;
 }
-.header .dropdown .dropdown_item {
+.dropdown .dropdown_item {
   font-family: Gilroy SemiBold;
-  color: #551F25;
+  color: #400e19;
   font-size: 1.6rem;
 }
 
 .footer {
   font-family: "KosansRegular", sans-serif;
   margin-top: 50px;
-  background-color: bisque;
+  background-color: #400e19;
+  color: #faeddd;
+}
+.footer .logo-image {
+  width: 13vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .footer__sections-list, .footer__services-list {
   list-style: none;
@@ -199,7 +181,7 @@ button {
   padding-right: 2rem;
   text-decoration: none;
   font-family: "Gilroy", sans-serif;
-  color: #400e19;
+  color: #faeddd;
   font-size: 18px;
   font-weight: bolder;
 }
@@ -208,7 +190,7 @@ button {
   margin-top: 100px;
   font-size: large;
   font-family: "Gilroy", sans-serif;
-  color: #400e19;
+  color: #faeddd;
   font-weight: bolder;
 }
 .footer__contact-info, .footer__sections, .footer__services {
