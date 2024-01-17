@@ -161,6 +161,21 @@ button {
   font-size: 1.6rem;
 }
 
+/* Results-block */
+.results-block {
+  width: 100%;
+  text-align: center;
+  background-color: #FBEEDE;
+}
+
+/* Separates blocks */
+.title {
+  padding: 1em 0 0.5em 0;
+  font-family: Gilroy Medium;
+  color: #551F25;
+  font-size: 4em;
+}
+
 .footer {
   font-family: "KosansRegular", sans-serif;
   margin-top: 3rem;
