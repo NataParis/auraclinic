@@ -168,6 +168,16 @@ button {
   background-color: #FBEEDE;
 }
 
+/* Certificates-block */
+.certificates-block {
+  width: 100%;
+  text-align: center;
+  background-color: #FBEEDE;
+}
+.certificates-block .carousel-item {
+  width: 100%;
+}
+
 /* Separates blocks */
 .title {
   padding: 1em 0 0.5em 0;
