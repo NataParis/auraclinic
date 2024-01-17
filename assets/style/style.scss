@@ -119,7 +119,6 @@ button {
 				font-family: Gilroy SemiBold;
 				color: $colordark;
 				font-size: 1.6rem;
-               
 			}
 		}
 		.header-block_logo {
@@ -147,7 +146,7 @@ button {
 		}
 	}
 }
-	/* Burger-list */
+/* Burger-list */
 	.dropdown {
 		.button {
 			border: none;
@@ -165,6 +164,20 @@ button {
 		}
 	}
 	
+/* Results-block */
+.results-block {
+	width: 100%;
+	text-align: center;
+	background-color: #FBEEDE;
+}
+
+/* Separates blocks */
+.title {
+	padding: 1em 0 0.5em 0;
+	font-family: Gilroy Medium;
+	color: #551F25;
+	font-size: 4em;
+}
 
 
 // Footer styles //
