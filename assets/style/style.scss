@@ -107,6 +107,7 @@ button {
 .header {
 	background-color: #FBEEDE;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 	.header-block {
 		display: grid;
 		grid-template-columns: 20% 65% 15%;
@@ -116,7 +117,7 @@ button {
 		.header-block__menu {
 			padding-top: 3%;
 			.nav-link {
-				font-family: Gilroy SemiBold;
+				font-family: $font-gilroy;
 				color: $colordark;
 				font-size: 1.6rem;
 			}
@@ -158,9 +159,10 @@ button {
 			color: $colordark;
 		}
 		.dropdown_item {
-			font-family: Gilroy SemiBold;
+			font-family: $font-gilroy;
 			color: $colordark;
-			font-size: 1.6rem;
+			font-size: 1.2rem;
+            font-weight: bolder;
 		}
 	}
 	
