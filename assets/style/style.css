@@ -163,6 +163,57 @@ button {
   font-weight: bolder;
 }
 
+/* Services-block */
+.services__title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.services__container {
+  display: flex;
+  text-align: center;
+  align-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.services-but {
+  background-color: #faeddd;
+  border: dotted 1px #400e19;
+  color: #400e19;
+  border-radius: 0%;
+}
+
+.pict-size {
+  max-width: 55%;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-weight: bolder;
+}
+
+.cosmetology-pict {
+  margin-bottom: 1rem;
+  border-radius: 15%;
+}
+
+.epilation-pict {
+  margin-bottom: 10px;
+  border-radius: 15%;
+}
+
+.body-pict {
+  margin-bottom: 10px;
+  border-radius: 15%;
+}
+
 /* Results-block */
 .results-block {
   width: 100%;
@@ -251,7 +302,7 @@ button {
 }
 
 .btn-custom:hover {
-  background-color: rgb(42, 97, 191);
+  background-color: grey;
   border-color: #750921;
   color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
