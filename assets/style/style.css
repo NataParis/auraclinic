@@ -6,6 +6,12 @@
   font-family: "Kosans";
   src: url("/assets/fonts/KosansDemoRegular-z8G8G.ttf") format("truetype");
 }
+@font-face {
+  font-family: "KosansRegular";
+  src: url("/assets/fonts/Kosans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,14 +23,376 @@ body {
   max-width: 100%;
 }
 
-.logopic {
-  width: 20vw;
+h2 {
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+  font-size: 2vw;
 }
 
-h1 {
+h3 {
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+  font-style: italic;
+  font-size: 1.2vw;
+  font-weight: lighter;
+}
+
+button {
+  width: 10vw;
+  height: 5vh;
+  background-color: #400e19;
+  border: none;
+  border-radius: 5cap;
+  font-size: 1.2em;
+  color: #faeddd;
+}
+
+.bannerpic {
+  width: 100vw;
+  max-height: 50vh;
+  margin-top: 1rem;
+}
+
+.about {
+  display: flex;
+  margin: 3rem;
+}
+.about h2 {
+  margin-bottom: 2rem;
+}
+.about .picabout {
+  border-radius: 2cap;
+  flex-basis: 40%;
+  max-height: 60vh;
+  max-width: 40vw;
+  flex-basis: 35%;
+}
+.about .clinicscript {
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  padding-left: 4rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80vw;
+  min-height: 20vh;
+  border-radius: 4cap;
+  background-image: url(/assets/images/iStock-1200557416.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+  margin-left: 8rem;
+}
+
+.input-box {
+  display: flex;
+  gap: 3rem;
+}
+.input-box .inputname {
+  border: none;
+  border-radius: 2cap;
+  width: 15vw;
+  height: 6vh;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Header */
+.header {
+  background-color: #FBEEDE;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.header .header-block {
+  display: grid;
+  grid-template-columns: 20% 65% 15%;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+.header .header-block .header-block__menu {
+  padding-top: 3%;
+}
+.header .header-block .header-block__menu .nav-link {
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-size: 1.6rem;
+}
+.header .header-block .header-block_logo {
+  width: 23vw;
+}
+.header .header-block .header-block__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header .header-block .header-block__contacts .header-block__contacts_telephone {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bolder;
+  color: #400e19;
+  font-size: 1.5rem;
+}
+.header .header-block .header-block__contacts .header-block__apps {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
+}
+.header .header-block .header-block__contacts .header-block__apps .header-block_icon {
+  width: 2.7rem;
+}
+
+/* Burger-list */
+.dropdown .button {
+  border: none;
+  outline: none;
+  background-color: #FBEEDE;
+}
+.dropdown .dropdown_list {
+  width: 2rem;
   color: #400e19;
 }
+.dropdown .dropdown_item {
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
 
-main {
+/* Services-block */
+.services__title {
   text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.services__container {
+  display: flex;
+  text-align: center;
+  align-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.services-but {
+  background-color: #faeddd;
+  border: dotted 1px #400e19;
+  color: #400e19;
+  border-radius: 0%;
+}
+
+.pict-size {
+  max-width: 55%;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-weight: bolder;
+}
+
+.cosmetology-pict {
+  margin-bottom: 1rem;
+  border-radius: 15%;
+}
+
+.epilation-pict {
+  margin-bottom: 10px;
+  border-radius: 15%;
+}
+
+.body-pict {
+  margin-bottom: 10px;
+  border-radius: 15%;
+}
+
+/* Results-block */
+.results-block {
+  width: 100%;
+  text-align: center;
+  background-color: #FBEEDE;
+}
+
+/* Certificates-block */
+.certificates-block {
+  width: 100%;
+  text-align: center;
+  background-color: #FBEEDE;
+}
+.certificates-block .carousel-item {
+  width: 100%;
+}
+
+/* Separates blocks */
+.title {
+  padding: 1em 0 0.5em 0;
+  font-family: Gilroy Medium;
+  color: #551F25;
+  font-size: 4em;
+}
+
+.review {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.review .review__icon-decoration {
+  max-width: 50%;
+  max-height: 30%;
+}
+.review .review__titile-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  gap: 1rem;
+  font-family: "Gilroy";
+  font-size: 1.25rem;
+  color: rgb(183, 117, 117);
+  margin-bottom: 10px;
+}
+.review .review__peoplesays {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 20px 0;
+  padding: 30px;
+}
+.review .review__peoplesays .review__firstperson {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 22px;
+  border: solid white 1px;
+  display: grid;
+  color: rgb(63, 20, 20);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #fdfcfc;
+}
+.review .review__peoplesays .review__firstperson .review__img-firstperson {
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.review .review__peoplesays .review__firstperson .review__name-surname {
+  margin: 0 auto;
+  padding: 5px;
+  grid-row: 2/3;
+}
+.review .review__peoplesays .review__firstperson .review__date {
+  margin: 0 auto;
+  grid-row: 3/4;
+}
+.review .review__peoplesays .review__firstperson .review__text-first {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  text-align: center;
+  max-width: 100%;
+  padding-top: 25px;
+  padding: 5px;
+  margin: 0 auto 5px 0;
+}
+.review .review__peoplesays .review__firstperson .review__icon-stars {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.review .review__btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.footer {
+  font-family: "Gilroy", serif;
+  margin-top: 6rem;
+  background-color: #400e19;
+  color: #faeddd;
+}
+.footer .logo-image {
+  width: 11vw;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.footer__sections-list, .footer__services-list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer__contact-title, .footer__sections-title, .footer__services-title {
+  margin-bottom: 2.5rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  font-family: "Gilroy", sans-serif;
+  color: #faeddd;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.footer__disclaimer-text {
+  font-family: "Gilroy", sans-serif;
+  color: #faeddd;
+  padding-top: 0.5em;
+  font-weight: bolder;
+}
+.footer__links-and-button {
+  font-family: "Gilroy", sans-serif;
+  display: flex;
+  gap: 10rem;
+  font-size: 18px;
+  padding-bottom: 2rem;
+}
+.footer__license {
+  margin-top: 1rem;
+}
+.footer__contact-info, .footer__sections, .footer__services {
+  margin-top: 30px;
+}
+.footer__footer-social img {
+  max-width: 30px;
+}
+.footer__link {
+  color: rgb(152, 148, 148);
+  text-decoration: none;
+}
+.footer__link .link:hover {
+  text-decoration: underline;
+}
+.footer__link .link:visited {
+  color: black;
+}
+
+.email-link {
+  text-decoration: none;
+  color: rgb(152, 148, 148);
+  font-size: larger;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.btn-custom {
+  background-color: #400e19;
+  color: #faeddd;
+  font-size: 1em;
+  width: 17rem;
+  border-radius: 2cap;
+}
+
+.btn-custom:hover {
+  background-color: #0E3F34;
+  border-color: #750921;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
