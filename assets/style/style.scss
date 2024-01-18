@@ -326,20 +326,17 @@ button {
     }
 }
 
-
 //end of review block//
 
-
 // Footer styles //
-
 .footer {
     font-family: 'Gilroy', serif;
-    margin-top: 3rem;
+    margin-top: 6rem;
     background-color: $colordark;
     color: $colorlight;
     .logo-image {
-        width: 13vw;
-        padding-top: 1rem;
+        width: 11vw;
+        padding-top: 2rem;
         padding-bottom: 1rem;
     }
     &__sections-list,
@@ -372,6 +369,9 @@ button {
     font-size: 18px;
     padding-bottom: 2rem;
 }
+    &__license {
+        margin-top: 1rem;
+    }
     &__contact-info,
     &__sections,
     &__services {
@@ -379,7 +379,7 @@ button {
 }
 
     &__footer-social img {
-        max-width: 40px;
+        max-width: 30px;
     }
     &__link{
         color: rgb(152, 148, 148); 
