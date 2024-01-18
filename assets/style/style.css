@@ -395,4 +395,33 @@ button {
   background-color: #0E3F34;
   border-color: #750921;
   color: #ffffff;
+}
+
+.blog-post__title, .blog-post__subtitle {
+  text-align: left;
+  font-family: "Gilroy", sans-serif;
+  color: #400e19;
+  font-size: 18px;
+  font-weight: bolder;
+  padding-top: 30px;
+}
+.blog-post__table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blog-post__list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-group-item {
+  border: 0;
+  background-color: #FBEEDE;
+}
+
+.list-group-item i {
+  margin-right: 5px;
+  color: #400e19;
 }/*# sourceMappingURL=style.css.map */

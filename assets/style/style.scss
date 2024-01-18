@@ -415,3 +415,37 @@ button {
     border-color:  #750921;
     color: #ffffff;
 }
+
+// Services page styles//
+
+.blog-post {
+    &__title,
+    &__subtitle {
+        text-align: left;
+        font-family: 'Gilroy', sans-serif;
+        color:#400e19;
+        font-size: 18px;
+        font-weight: bolder;
+        padding-top: 30px;
+    }
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+    
+}
+
+.list-group-item {
+        border: 0;
+        background-color: #FBEEDE;
+}
+.list-group-item i {
+    margin-right: 5px;
+    color: #400e19;
+}
