@@ -29,6 +29,7 @@ Work in your local branch on individual tasks, then make pull requests for revie
 This project is based on mixed approach using the Bootstrap framework for galleries as well as flex and grid based positioning
 
 ## Adoptive design 
+Please, use relative dimensions like rem, em, %, max-width, vw for responsive and adoptive layout and avoid fixed sizes in pixels
 
 The loffowing sizes should be used in media queries: 
 - mobile S: @media(max-width:360px){}
