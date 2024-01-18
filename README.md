@@ -31,9 +31,9 @@ This project is based on mixed approach using the Bootstrap framework for galler
 ## Adoptive design 
 
 The loffowing sizes should be used in media queries: 
-- Mobile L: max-width 425px;
-- Tablet: min-width: 768px and max-width: 1023px;
-- Desktop: min-width: 1024px;
+- mobile S: @media(max-width:360px){}
+- smartphone: @media(max-width:768px){}
+- tablet: @media(max-width:1024px){} 
 
 ## BEM methodology
 
