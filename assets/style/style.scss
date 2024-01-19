@@ -779,26 +779,24 @@ margin: 0 auto 20px 0;
 
 //review block//
 .review{
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 10px;
+    max-width: 100%;
+    background-repeat: no-repeat ;
+    background-size: 20%;
+    background-image: url(../images/review/gold-leaf.webp);
+    padding-top: 30px;
     margin: 0 auto;
-    .review__icon-decoration{
-        max-width: 50%;
-        max-height: 30%;
+    @media (max-width:768px){
+        background-size: 40%;
      }
-    
+   
     .review__titile-logo{
      display: flex;
      justify-content: center;
      align-items: center;
-     padding-left: 15px;
      gap: 1rem;
-     font-family: 'Gilroy';
-     font-size: 1.25rem;
-     color: rgb(183, 117, 117);
+     color: $colordark;
+     font-family: $font-gilroy;
+     font-size: 2vw;
      margin-bottom: 10px;
     }
     
@@ -812,6 +810,13 @@ margin: 0 auto 20px 0;
      height: 100%;
      margin: 0 auto 20px 0;
      padding: 30px;
+     @media (max-width:1024px){
+        gap: 2rem;
+     }
+     @media (max-width:768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
      
      
      .review__firstperson{
@@ -824,6 +829,10 @@ margin: 0 auto 20px 0;
          grid-template-columns: 1fr ;
          grid-template-rows: 1fr ;
          background-color:#fdfcfc;
+         @media (max-width:1024px){
+            max-height: 100%;
+         }
+        
          .review__img-firstperson{
             padding: 15px;
             margin: 0 auto;
@@ -833,6 +842,7 @@ margin: 0 auto 20px 0;
             margin: 0 auto;
             padding: 5px;
             grid-row: 2/3;
+            text-align: center;
          }
          .review__date{
             margin: 0 auto;
@@ -848,10 +858,12 @@ margin: 0 auto 20px 0;
              padding-top: 25px;
              padding: 5px;
              margin: 0 auto 5px 0;
+             text-align: center;
          }
          .review__icon-stars{
             margin: 0 auto ;
             margin-bottom: 5px;
+            grid-row: 5/6;
 
          }
      }

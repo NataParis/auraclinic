@@ -678,26 +678,26 @@ button {
 }
 
 .review {
-  width: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 10px;
+  background-size: 20%;
+  background-image: url(../images/review/gold-leaf.webp);
+  padding-top: 30px;
   margin: 0 auto;
 }
-.review .review__icon-decoration {
-  max-width: 50%;
-  max-height: 30%;
+@media (max-width: 768px) {
+  .review {
+    background-size: 40%;
+  }
 }
 .review .review__titile-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 15px;
   gap: 1rem;
-  font-family: "Gilroy";
-  font-size: 1.25rem;
-  color: rgb(183, 117, 117);
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+  font-size: 2vw;
   margin-bottom: 10px;
 }
 .review .review__peoplesays {
@@ -708,6 +708,17 @@ button {
   height: 100%;
   margin: 0 auto 20px 0;
   padding: 30px;
+}
+@media (max-width: 1024px) {
+  .review .review__peoplesays {
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .review .review__peoplesays {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .review .review__peoplesays .review__firstperson {
   width: 100%;
@@ -720,6 +731,11 @@ button {
   grid-template-rows: 1fr;
   background-color: #fdfcfc;
 }
+@media (max-width: 1024px) {
+  .review .review__peoplesays .review__firstperson {
+    max-height: 100%;
+  }
+}
 .review .review__peoplesays .review__firstperson .review__img-firstperson {
   padding: 15px;
   margin: 0 auto;
@@ -729,6 +745,7 @@ button {
   margin: 0 auto;
   padding: 5px;
   grid-row: 2/3;
+  text-align: center;
 }
 .review .review__peoplesays .review__firstperson .review__date {
   margin: 0 auto;
@@ -742,10 +759,12 @@ button {
   padding-top: 25px;
   padding: 5px;
   margin: 0 auto 5px 0;
+  text-align: center;
 }
 .review .review__peoplesays .review__firstperson .review__icon-stars {
   margin: 0 auto;
   margin-bottom: 5px;
+  grid-row: 5/6;
 }
 .review .review__btn {
   display: flex;
