@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Gilroy";
   src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
@@ -245,6 +244,8 @@ button {
 
 /* Header */
 .header {
+  width: 100%;
+  max-width: 100%;
   background-color: #faeddd;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -268,12 +269,14 @@ button {
   width: 100%;
 }
 .header .header-block .header-block__button {
-  padding-top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 .header .header-block .header-block__contacts {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
 }
 .header .header-block .header-block__contacts .header-block__contacts_telephone {
   font-family: "Gilroy", sans-serif;
@@ -306,9 +309,9 @@ button {
 }
 
 /* Main banner-gallery */
-/* main-banner__gallery - не реагирует */
-.carousel-inner {
-  height: 80vh;
+.main-banner__gallery {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Services-block */
@@ -593,8 +596,9 @@ button {
   text-align: center;
   background-color: #faeddd;
 }
-.certificates-block .carousel-item {
-  width: 100%;
+.certificates-block .certificates-block__slides {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Separates blocks */
@@ -603,6 +607,17 @@ button {
   font-family: Gilroy Medium;
   color: #400e19;
   font-size: 4em;
+}
+
+.sign-up__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 0.7em;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
 }
 
 .review {
