@@ -966,3 +966,24 @@ margin: 0 auto 20px 0;
     border-color:  #750921;
     color: #ffffff;
 }
+
+  // Styles for catalogue //
+.blog-post {
+    &__list {
+    list-style: none;
+    padding: 0; 
+    background-color: #faeddd;  
+}
+    &__table {
+        width: 100%;
+        border-collapse: collapse; 
+        border-radius: 10px;
+        overflow: hidden;
+    }
+.blog-post__list li {
+    margin-bottom: 5px; 
+    padding: 8px;
+    color: dimgray; 
+}
+}
+
