@@ -1,292 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <link rel="normaliser" href="/assets/style/normalize.css" />
+    <link rel="stylesheet" href="/assets/style/bootstrap/bootstrap-grid.css" />
+    <title>AURAclinic</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/style/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" href="/assets/style/style.css" />
-  <link rel="normaliser" href="/assets/style/normalize.css" />
-  <link rel="stylesheet" href="/assets/style/bootstrap/bootstrap-grid.css" />
-  <title>AURAclinic</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-block">
-      <div>
-        <img
+  <body>
+    <header class="header">
+      <div class="header-block">
+        <div>
+          <img
             class="header-block_logo"
             src="./assets/images/logoLat.png"
             alt="Logo"
           />
-      </div>
-      <div class="header-block__menu">
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Акции</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О нас</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Услуги</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Цены</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-          <!-- Burger-list -->
-          <li class="nav-item">
-            <div class="dropdown">
-              <button
+        </div>
+        <div class="header-block__menu">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Акции</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Цены</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+            <!-- Burger-list -->
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
                   class="btn btn-secondary dropdown-toggle button"
                   type="button"
                   data-bs-toggle="dropdown"
-                aria-expanded="false"
+                  aria-expanded="false"
                 >
-                <img
+                  <img
                     class="dropdown_list"
                     src="./assets/images/socApp/list.svg"
                     alt="List"
                   />
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item dropdown_item" href="#"
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item dropdown_item" href="#"
                       >Результаты</a
                     >
-                </li>
-                <li>
-                  <a class="dropdown-item dropdown_item" href="#">Отзывы</a>
-                </li>
-                <li>
-                  <a class="dropdown-item dropdown_item" href="#"
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown_item" href="#">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown_item" href="#"
                       >Специалисты</a
                     >
-                </li>
-                <li>
-                  <a class="dropdown-item dropdown_item" href="#">Лицензии</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <button type="button">Записаться -></button>
-          </li>
-        </ul>
-      </div>
-      <div class="header-block__contacts">
-        <p class="header-block__contacts_telephone">8 (988) 827-97-50</p>
-        <div class="header-block__apps">
-          <a href="#"
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown_item" href="#">Лицензии</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="header-block__button">
+          <button class="sign-up__button" type="button">Записаться</button>
+        </div>
+        <div class="header-block__contacts">
+          <p class="header-block__contacts_telephone">8 (988) 827-97-50</p>
+          <div class="header-block__apps">
+            <a href="#"
               ><img
                 class="header-block_icon"
                 src="./assets/images/socApp/var3/telegram.svg"
-              alt="Telegram"
+                alt="Telegram"
             /></a>
-          <a href="#"
+            <a href="#"
               ><img
                 class="header-block_icon"
                 src="./assets/images/socApp/var3/whatsapp.svg"
-              alt="WhatsApp"
+                alt="WhatsApp"
             /></a>
-          <a href="#"
+            <a href="#"
               ><img
                 class="header-block_icon"
                 src="./assets/images/socApp/var3/vk.svg"
                 alt="VK"
             /></a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <!-- Main banner-gallery -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
+    </header>
+    <main>
+      <!-- Main banner-gallery -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide main-banner__gallery"
+      >
+        <div class="carousel-indicators">
+          <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="0"
             class="active"
-          aria-current="true"
+            aria-current="true"
             aria-label="Slide 1"
           ></button>
-        <button
+          <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="1"
-          aria-label="Slide 2"
+            aria-label="Slide 2"
           ></button>
-        <button
+          <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="2"
-          aria-label="Slide 3"
+            aria-label="Slide 3"
           ></button>
-        <button
+          <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="3"
-          aria-label="Slide 4"
+            aria-label="Slide 4"
           ></button>
-        <button
+          <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="4"
-          aria-label="Slide 4"
+            aria-label="Slide 4"
           ></button>
-        <button
+          <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="5"
-          aria-label="Slide 5"
+            aria-label="Slide 5"
           ></button>
-        <button
+          <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="6"
-          aria-label="Slide 6"
+            aria-label="Slide 6"
           ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-              src="./assets/images/mainGallery/mainBanner2.png"
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="carousel-item__img"
+              src="./assets/images/mainGallery/mainBanner.png"
               class="d-block w-100"
               alt="..."
             />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
                 Some representative placeholder content for the first slide.
               </p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
+          <div class="carousel-item">
+            <img
+              class="carousel-item__img"
               src="./assets/images/mainGallery/promotion1.png"
               class="d-block w-100"
               alt="..."
             />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
                 Some representative placeholder content for the second slide.
               </p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
+          <div class="carousel-item">
+            <img
+              class="carousel-item__img"
               src="./assets/images/mainGallery/promotion2.png"
               class="d-block w-100"
               alt="..."
             />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
                 Some representative placeholder content for the third slide.
               </p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
+          <div class="carousel-item">
+            <img
+              class="carousel-item__img"
               src="./assets/images/mainGallery/promotion3.png"
               class="d-block w-100"
               alt="..."
             />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
                 Some representative placeholder content for the third slide.
               </p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
+          <div class="carousel-item">
+            <img
+              class="carousel-item__img"
               src="./assets/images/mainGallery/promotion4.png"
               class="d-block w-100"
               alt="..."
             />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
                 Some representative placeholder content for the third slide.
               </p>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
+          <div class="carousel-item">
+            <img
+              class="carousel-item__img"
               src="./assets/images/mainGallery/promotion5.png"
               class="d-block w-100"
               alt="..."
             />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
                 Some representative placeholder content for the third slide.
               </p>
-</div>
+            </div>
           </div>
         </div>
-      <button
+        <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
+          data-bs-slide="prev"
         >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
           class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
+          data-bs-slide="next"
         >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="about">
-      <img
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="about">
+        <img
           class="picabout"
           src="/assets/images/photo_2024-01-05_17-50-56.jpg"
           alt="interoir"
         />
-<!-- About us-block -->
-      <div class="clinicscript">
-        <h2>О нас</h2>
-        <p>
-          Приветствуем вас в новом оазисе красоты. В стенах нашего уютного
-          бьюти-пространства вы сможете стать лучшей версией себя,
-          позаботиться о своем лице, теле и здоровье.
-        </p>
-        <p>
-          Наши сотрудники — высококвалифицированные специалисты, постоянно
-          совершенствующие свои навыки. Они проведут для вас консультаци,
-          подберут правильный уход и предложат инновационные процедуры с
-          использованием передовых технологий для достижения лучших
-          результатов.
-        </p>
-        <p>
-          Мы используем только сертифицированное оборудование премиум-класса,
-          с большим трепетом относимся к каждому нашему клиенту и ответственны
-          за каждый этап процесса.
-        </p>
-        <p>
-          Нам важно сделать все, чтобы вы становились здоровее, красивее и
-          увереннее в себе!
-        </p>
-        <p>Ждем вас в нашей клинике,</p>
-        <p>С любовью,</p>
-        <h3>ваша Аура</h3>
+        <!-- About us-block -->
+        <div class="clinicscript">
+          <h2>О нас</h2>
+          <p>
+            Приветствуем вас в новом оазисе красоты. В стенах нашего уютного
+            бьюти-пространства вы сможете стать лучшей версией себя,
+            позаботиться о своем лице, теле и здоровье.
+          </p>
+          <p>
+            Наши сотрудники — высококвалифицированные специалисты, постоянно
+            совершенствующие свои навыки. Они проведут для вас консультаци,
+            подберут правильный уход и предложат инновационные процедуры с
+            использованием передовых технологий для достижения лучших
+            результатов.
+          </p>
+          <p>
+            Мы используем только сертифицированное оборудование премиум-класса,
+            с большим трепетом относимся к каждому нашему клиенту и ответственны
+            за каждый этап процесса.
+          </p>
+          <p>
+            Нам важно сделать все, чтобы вы становились здоровее, красивее и
+            увереннее в себе!
+          </p>
+          <p>Ждем вас в нашей клинике,</p>
+          <p>С любовью,</p>
+          <h3>ваша Аура</h3>
+        </div>
       </div>
-    </div>
-    <!-- Services-block -->
+      <!-- Services-block -->
       <div class="services">
         <h2 class="services__title">Услуги</h2>
         <div class="services__container">
@@ -326,163 +334,237 @@
         </div>
       </div>
 
-    <!-- Results-block -->
-    <div class="results-block">
-      <div class="results-block_title title">Наши результаты</div>
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
+      <!-- Results-block -->
+      <div class="results-block">
+        <div class="results-block_title title">Наши результаты</div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
               class="active"
-            aria-current="true"
+              aria-current="true"
               aria-label="Slide 1"
             ></button>
-          <button
+            <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
-            aria-label="Slide 2"
+              aria-label="Slide 2"
             ></button>
-          <button
+            <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
-            aria-label="Slide 3"
+              aria-label="Slide 3"
             ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
                 src="./assets/images/resultsGallery/results1.png"
                 class="d-block w-100"
                 alt="..."
               />
-          </div>
-          <div class="carousel-item">
-            <img
+            </div>
+            <div class="carousel-item">
+              <img
                 src="./assets/images/resultsGallery/results2.png"
                 class="d-block w-100"
                 alt="..."
               />
-          </div>
-          <div class="carousel-item">
-            <img
+            </div>
+            <div class="carousel-item">
+              <img
                 src="./assets/images/resultsGallery/results3.png"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
           </div>
-        <button
+          <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
+            data-bs-slide="prev"
           >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
             class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
+            data-bs-slide="next"
           >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div>Наши специалисты</div>
-    
+      <!-- team block -->
+      <div class="personal">
+        <h2 class="personal__title">
+          НАШИ СПЕЦИАЛИСТЫ
+          <img
+            class="personal__icon"
+            src="./assets/images/team/golden-leaves.png"
+            alt="leave"
+          />
+        </h2>
+
+        <div class="personal__people">
+          <div class="personal__person-one">
+            <img
+              class="personal__img-girl-one"
+              src="./assets/images/team/person.png"
+              alt="person-one"
+            />
+            <div class="personal__daten-title-one">
+              <span class="personal__names">Маша Иванова</span>
+              <p class="personal__job">Врач-дерматовенеролог</p>
+            </div>
+            <button class="personal__btn">Записаться</button>
+          </div>
+
+          <div class="personal__person-two">
+            <img
+              class="personal__img-girl-two"
+              src="./assets/images/team/person.png"
+              alt="person-one"
+            />
+            <div class="personal__daten-title-two">
+              <span class="personal__names">Маша Иванова</span>
+              <p class="personal__job">Врач-косметолог</p>
+            </div>
+            <button class="personal__btn">Записаться</button>
+          </div>
+
+          <div class="personal__person-three">
+            <img
+              class="personal__img-girl-three"
+              src="./assets/images/team/person.png"
+              alt="person-one"
+            />
+            <div class="personal__daten-title-three">
+              <span class="personal__names">Маша Иванова</span>
+              <p class="personal__job">Врач-физиотерапевт</p>
+            </div>
+            <button class="personal__btn">Записаться</button>
+          </div>
+          <div class="personal__person-four">
+            <img
+              class="personal__img-girl-four"
+              src="./assets/images/team/person.png"
+              alt="person-one"
+            />
+            <div class="personal__daten-title-four">
+              <span class="personal__names">Маша Иванова</span>
+              <p class="personal__job">Эстетист</p>
+            </div>
+            <button class="personal__btn">Записаться</button>
+          </div>
+          <!-- <div class="personal__person-fife">
+            <img
+              class="personal__img-girl-fife"
+              src="./assets/images/team/person.png"
+              alt="person-one"
+            />
+            <div class="personal__daten-title-fife">
+              <span class="personal__names">Маша Иванова</span>
+              <p class="personal__job">Массажист</p>
+            </div>
+            <button class="personal__btn">Записаться</button>
+          </div> -->
+        </div>
+      </div>
+      <!-- end of team block -->
+
       <!-- Certificates-gallery (с автозапуском: свойство ride: carousel)-->
       <div class="certificates-block">
         <div class="certificates-block_title title">Сертификаты и лицензии</div>
-<div class="row certificates-block__slides">
-          <div class="col-md-8 offset-md-2">
-            <div
-              id="carouselExampleAutoplaying"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/images/certificatesGallery/certificate1.png"
-                    class="d-block w-100"
-                    alt="Certificate 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/certificatesGallery/certificate2.jpg"
-                    class="d-block w-100"
-                    alt="Certificate 2"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/certificatesGallery/certificate3.png"
-                    class="d-block w-100"
-                    alt="Certificate 3"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/certificatesGallery/certificate4.png"
-                    class="d-block w-100"
-                    alt="Certificate 4"
-                  />
-                </div>
+        <div class="row certificates-block__slides">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/images/certificatesGallery/certificate1.png"
+                  class="d-block w-100"
+                  alt="Certificate 1"
+                />
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/certificatesGallery/certificate2.jpg"
+                  class="d-block w-100"
+                  alt="Certificate 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/certificatesGallery/certificate3.png"
+                  class="d-block w-100"
+                  alt="Certificate 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/certificatesGallery/certificate4.png"
+                  class="d-block w-100"
+                  alt="Certificate 4"
+                />
+              </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
       <!-- review block -->
       <div class="review">
-        <img
+        <!--  <img
           class="review__icon-decoration"
           src="./assets/images/review/gold-leaf.webp"
           alt="leaf"
-        />
+        /> -->
         <div class="review__titile-logo">
           <h2 class="review__name">Отзывы</h2>
         </div>
         <div class="review__peoplesays">
           <div class="review__firstperson">
-            <img
+            <!--  <img
               class="review__img-firstperson"
               src="./assets/images/review/person-one.png"
               alt="firstperson"
-            />
+            /> -->
             <h4 class="review__name-surname">Дарья Рублева</h4>
             <span class="review__date">16.07.2023</span>
             <p class="review__text-first">
@@ -497,11 +579,11 @@
             />
           </div>
           <div class="review__firstperson">
-            <img
+            <!-- <img
               class="review__img-firstperson"
               src="./assets/images/review/person-one.png"
               alt="firstperson"
-            />
+            /> -->
             <h4 class="review__name-surname">Дарья Рублева</h4>
             <span class="review__date">16.07.2023</span>
             <p class="review__text-first">
@@ -516,11 +598,11 @@
             />
           </div>
           <div class="review__firstperson">
-            <img
+            <!--  <img
               class="review__img-firstperson"
               src="./assets/images/review/person-one.png"
               alt="firstperson"
-            />
+            /> -->
             <h4 class="review__name-surname">Дарья Рублева</h4>
             <span class="review__date">16.07.2023</span>
             <p class="review__text-first">
@@ -535,11 +617,11 @@
             />
           </div>
           <div class="review__firstperson">
-            <img
+            <!-- <img
               class="review__img-firstperson"
               src="./assets/images/review/person-one.png"
               alt="firstperson"
-            />
+            /> -->
             <h4 class="review__name-surname">Дарья Рублева</h4>
             <span class="review__date">16.07.2023</span>
             <p class="review__text-first">
@@ -556,8 +638,8 @@
         </div>
         <button class="review__btn">Больше отзывов</button>
       </div>
-
       <!-- end of review block -->
+
       <div class="submit">
         <h2>Оставить заявку</h2>
         <div class="input-box">
@@ -567,92 +649,131 @@
       </div>
     </main>
 
-  <footer class="footer">
-    <div class="container mt-5">
-      <div class="row">
-        <!-- Logo and main info-->
-        <div class="col-md-4 mb-4 footer__main-info footer--col">
-          <img src="./assets/images/logolight.png" alt="Clinic Logo" class="logo-image"/>
-          <p class="footer__license">
-            Лицензия: №ЛО-77-01-005469 <br />от 20 ноября 2020 г.
-          </p>
-          <p class="footer__copyright">© 2024 Аура</p>
-          <p class="footer__clinic-info">Клиника эстетической медицины</p>
-          <a class="footer__link" href="ссылка-на-политику" target="_blank">Политика конфиденциальности</a><br />
-          <a class="footer__link" href="ссылка-на-согласие" target="_blank">Согласие на обработку персональных данных</a>
-        </div>
-
-        <!-- Contact Information -->
-        <div class="col-md-4 mb-4 mt-5 ps-4 footer__contact-info">
-          <h4 class="footer__contact-title">Контакты</h4>
-          <p class="footer__contact-address">г. Назрань, ул. Мира, 11</p>
-          <p class="footer__contact-hours">9:00 - 19:00</p>
-          <p class="footer__contact-phone">+7 (988) 827-97-50</p>
-          <a href="mailto:aesthet.aura@gmail.com" target="_blank" class="email-link">aesthet.aura@gmail.com</a>
-          <div class="mt-3 footer__footer-social">
-            <a href="https://t.me/aura_clinicc" target="_blank" class="d-inline-block">
-              <img src="assets/images/socApp/telegram_icon2.png" alt="Telegram Icon" class="img-fluid"/>
-            </a>
-            <a href="https://www.instagram.com/aura_clinicc/" target="_blank" class="d-inline-block">
-              <img src="assets/images/socApp/instagram_icon2.png" alt="Instagram Icon" class="img-fluid"/>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=your_whatsapp_phone_number" target="_blank" class="d-inline-block">
-              <img src="assets/images/socApp/whatsapp_icon2.png" alt="Whatsap Icon" class="img-fluid"/>
-            </a>
+    <footer class="footer">
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Logo and main info-->
+          <div class="col-md-4 mb-4 footer__main-info footer--col">
+            <img
+              src="./assets/images/logolight.png"
+              alt="Clinic Logo"
+              class="logo-image"
+            />
+            <p class="footer__license">
+              Лицензия: №ЛО-77-01-005469 <br />от 20 ноября 2020 г.
+            </p>
+            <p class="footer__copyright">© 2024 Аура</p>
+            <p class="footer__clinic-info">Клиника эстетической медицины</p>
+            <a class="footer__link" href="ссылка-на-политику" target="_blank"
+              >Политика конфиденциальности</a
+            ><br />
+            <a class="footer__link" href="ссылка-на-согласие" target="_blank"
+              >Согласие на обработку персональных данных</a
+            >
           </div>
-        </div>
 
-        <!-- Sections -->
-        <div class="col-md-2 mb-2 mt-5 footer__sections">
-          <h4 class="footer__sections-title">Разделы сайта</h4>
-          <ul class="footer__sections-list">
-            <li><a class="footer__link" href="#">О нас</a></li>
-            <li><a class="footer__link" href="#">Услуги</a></li>
-            <li><a class="footer__link" href="#">Специалисты</a></li>
-            <li><a class="footer__link" href="#">Результаты</a></li>
-            <li><a class="footer__link" href="#">Акции</a></li>
-            <li><a class="footer__link" href="#">Отзывы</a></li>
-            <li><a class="footer__link" href="#">Контакты</a></li>
-          </ul>
-        </div>
+          <!-- Contact Information -->
+          <div class="col-md-4 mb-4 mt-5 ps-4 footer__contact-info">
+            <h4 class="footer__contact-title">Контакты</h4>
+            <p class="footer__contact-address">г. Назрань, ул. Мира, 11</p>
+            <p class="footer__contact-hours">9:00 - 19:00</p>
+            <p class="footer__contact-phone">+7 (988) 827-97-50</p>
+            <a
+              href="mailto:aesthet.aura@gmail.com"
+              target="_blank"
+              class="email-link"
+              >aesthet.aura@gmail.com</a
+            >
+            <div class="mt-3 footer__footer-social">
+              <a
+                href="https://t.me/aura_clinicc"
+                target="_blank"
+                class="d-inline-block"
+              >
+                <img
+                  src="assets/images/socApp/telegram_icon2.png"
+                  alt="Telegram Icon"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/aura_clinicc/"
+                target="_blank"
+                class="d-inline-block"
+              >
+                <img
+                  src="assets/images/socApp/instagram_icon2.png"
+                  alt="Instagram Icon"
+                  class="img-fluid"
+                />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=your_whatsapp_phone_number"
+                target="_blank"
+                class="d-inline-block"
+              >
+                <img
+                  src="assets/images/socApp/whatsapp_icon2.png"
+                  alt="Whatsap Icon"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
 
-        <!-- Services -->
-        <div class="col-md-2 mb-4 mt-5 footer__services">
-          <h4 class="footer__services-title">Услуги клиники</h4>
-          <ul class="footer__services-list">
-            <li><a class="footer__link" href="#">Консультации</a></li>
-            <li>
-              <a class="footer__link" href="#">Аппаратная косметология</a>
-            </li>
-            <li>
-              <a class="footer__link" href="#">Инъекционная косметология</a>
-            </li>
-            <li><a class="footer__link" href="#">Нитевой лифтинг</a></li>
-            <li><a class="footer__link" href="#">Коррекция фигуры</a></li>
-            <li>
-              <a class="footer__link" href="#">Эстетическая косметология</a>
-            </li>
-            <li>
-              <a class="footer__link" href="#">Anti-age косметология</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Links and Button -->
-        <div class="footer__links-and-button">
-          <button class="btn btn-custom footer__button">
-            Версия для слабовидящих
-          </button>
-          <!-- Disclaimer -->
-          <div class="footer__disclaimer-text">
-            Имеются противопоказания. Необходима очная консультация
-            специалиста.
+          <!-- Sections -->
+          <div class="col-md-2 mb-2 mt-5 footer__sections">
+            <h4 class="footer__sections-title">Разделы сайта</h4>
+            <ul class="footer__sections-list">
+              <li><a class="footer__link" href="#">О нас</a></li>
+              <li><a class="footer__link" href="#">Услуги</a></li>
+              <li><a class="footer__link" href="#">Специалисты</a></li>
+              <li><a class="footer__link" href="#">Результаты</a></li>
+              <li><a class="footer__link" href="#">Акции</a></li>
+              <li><a class="footer__link" href="#">Отзывы</a></li>
+              <li><a class="footer__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-2 mb-4 mt-5 footer__services">
+            <h4 class="footer__services-title">Услуги клиники</h4>
+            <ul class="footer__services-list">
+              <li><a class="footer__link" href="#">Консультации</a></li>
+              <li>
+                <a class="footer__link" href="#">Аппаратная косметология</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Инъекционная косметология</a>
+              </li>
+              <li><a class="footer__link" href="#">Нитевой лифтинг</a></li>
+              <li><a class="footer__link" href="#">Коррекция фигуры</a></li>
+              <li>
+                <a class="footer__link" href="#">Эстетическая косметология</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Anti-age косметология</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Links and Button -->
+          <div class="footer__links-and-button">
+            <button class="btn btn-custom footer__button">
+              Версия для слабовидящих
+            </button>
+            <!-- Disclaimer -->
+            <div class="footer__disclaimer-text">
+              Имеются противопоказания. Необходима очная консультация
+              специалиста.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
-</body>
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

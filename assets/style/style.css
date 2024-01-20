@@ -3,6 +3,146 @@
   src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-ExtraBold.eot");
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("Gilroy-ExtraBold.woff") format("woff"), url("Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("Gilroy-Heavy.woff") format("woff"), url("Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-LightItalic.eot");
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-LightItalic.woff") format("woff"), url("Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-ThinItalic.eot");
+  src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-ThinItalic.woff") format("woff"), url("Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-BlackItalic.eot");
+  src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-BlackItalic.woff") format("woff"), url("Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-BoldItalic.eot");
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-BoldItalic.woff") format("woff"), url("Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("Gilroy-SemiBold.woff") format("woff"), url("Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-UltraLightItalic.eot");
+  src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-UltraLightItalic.woff") format("woff"), url("Gilroy-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-SemiBoldItalic.eot");
+  src: local("Gilroy SemiBold Italic"), local("Gilroy-SemiBoldItalic"), url("Gilroy-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-SemiBoldItalic.woff") format("woff"), url("Gilroy-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("Gilroy-Light.woff") format("woff"), url("Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-MediumItalic.eot");
+  src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-MediumItalic.woff") format("woff"), url("Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-ExtraBoldItalic.eot");
+  src: local("Gilroy ExtraBold Italic"), local("Gilroy-ExtraBoldItalic"), url("Gilroy-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-ExtraBoldItalic.woff") format("woff"), url("Gilroy-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-HeavyItalic.eot");
+  src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-HeavyItalic.woff") format("woff"), url("Gilroy-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("Gilroy-Medium.woff") format("woff"), url("Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-RegularItalic.eot");
+  src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"), url("Gilroy-RegularItalic.woff") format("woff"), url("Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("Gilroy-UltraLight.woff") format("woff"), url("Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("Gilroy-Bold.woff") format("woff"), url("Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"), url("Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("Gilroy-Thin.woff") format("woff"), url("Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"), url("Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("Gilroy-Black.woff") format("woff"), url("Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
   font-family: "Kosans";
   src: url("/assets/fonts/KosansDemoRegular-z8G8G.ttf") format("truetype");
 }
@@ -104,14 +244,16 @@ button {
 
 /* Header */
 .header {
-  background-color: #FBEEDE;
+  width: 100%;
+  max-width: 100%;
+  background-color: #faeddd;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .header .header-block {
   display: grid;
-  grid-template-columns: 20% 65% 15%;
-  width: 90%;
+  grid-template-columns: 20% 50% 10% 20%;
+  width: 95%;
   height: 90%;
   margin: 0 auto;
 }
@@ -124,18 +266,22 @@ button {
   font-size: 1.6rem;
 }
 .header .header-block .header-block_logo {
-  width: 23vw;
+  width: 100%;
+}
+.header .header-block .header-block__button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 .header .header-block .header-block__contacts {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: end;
 }
 .header .header-block .header-block__contacts .header-block__contacts_telephone {
   font-family: "Gilroy", sans-serif;
-  font-weight: bolder;
   color: #400e19;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .header .header-block .header-block__contacts .header-block__apps {
   display: flex;
@@ -150,7 +296,7 @@ button {
 .dropdown .button {
   border: none;
   outline: none;
-  background-color: #FBEEDE;
+  background-color: #faeddd;
 }
 .dropdown .dropdown_list {
   width: 2rem;
@@ -160,7 +306,12 @@ button {
   font-family: "Gilroy", sans-serif;
   color: #400e19;
   font-size: 1.2rem;
-  font-weight: bolder;
+}
+
+/* Main banner-gallery */
+.main-banner__gallery {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Services-block */
@@ -218,48 +369,335 @@ button {
 .results-block {
   width: 100%;
   text-align: center;
-  background-color: #FBEEDE;
+  background-color: #faeddd;
+}
+
+.personal {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #faeddd;
+}
+.personal .personal__title {
+  text-align: center;
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+  font-size: 2vw;
+  padding-top: 30px;
+  margin: 0 auto 20px 0;
+}
+.personal .personal__icon {
+  max-width: 70%;
+  max-height: 100px;
+}
+.personal .personal__people {
+  max-width: 100%;
+  max-height: 100%;
+  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  .personal__person-fife{
+       width: 100%;
+           margin: 0 auto;
+           border-radius:50%;
+
+       .personal__img-girl-fife{
+           width: 100%;
+           margin: 0 auto;
+           border-radius:50%;
+       }
+       .personal__daten-title-fife{
+           color:rgb(94, 23, 13);
+           font-size: 1.5rem;
+           margin: 0 auto;
+           max-width: 100%;
+           max-height: 100%;
+          padding-top: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+          .personal__names{
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           font-size: 2rem;
+           margin: 0 auto;
+           text-align: center;
+          }
+       }
+       .personal__btn{
+           display: flex;
+           padding: 10px 20px;
+           font-size: 16px;
+           border-radius: 10px;
+           background-color: rgb(215, 188, 185);
+           color:white;
+           cursor: pointer;
+           justify-content: center;
+           margin: 0 auto;
+
+          }
+   }  */
+}
+@media (max-width: 1024px) {
+  .personal .personal__people {
+    gap: 1rem;
+  }
+}
+.personal .personal__people .personal__person-one {
+  max-width: 50%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-one .personal__img-girl-one {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-one .personal__daten-title-one {
+  color: rgb(94, 23, 13);
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-one .personal__daten-title-one {
+    max-width: 300px;
+    max-height: 250px;
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-one .personal__btn {
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.personal .personal__people .personal__person-two {
+  max-width: 50%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-two .personal__img-girl-two {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-two .personal__daten-title-two {
+  color: rgb(94, 23, 13);
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-two .personal__daten-title-two {
+    max-width: 300px;
+    max-height: 250px;
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-two .personal__btn {
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.personal .personal__people .personal__person-three {
+  max-width: 50%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-three .personal__img-girl-three {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-three .personal__daten-title-three {
+  color: rgb(94, 23, 13);
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-three .personal__daten-title-three {
+    max-width: 300px;
+    max-height: 250px;
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-three .personal__btn {
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.personal .personal__people .personal__person-four {
+  max-width: 50%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-four .personal__img-girl-four {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.personal .personal__people .personal__person-four .personal__daten-title-four {
+  color: rgb(94, 23, 13);
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-four .personal__daten-title-four {
+    max-width: 300px;
+    max-height: 250px;
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
+    font-size: 20px;
+  }
+}
+.personal .personal__people .personal__person-four .personal__btn {
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 /* Certificates-block */
 .certificates-block {
   width: 100%;
   text-align: center;
-  background-color: #FBEEDE;
+  background-color: #faeddd;
 }
-.certificates-block .carousel-item {
-  width: 100%;
+.certificates-block .certificates-block__slides {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Separates blocks */
 .title {
   padding: 1em 0 0.5em 0;
   font-family: Gilroy Medium;
-  color: #551F25;
+  color: #400e19;
   font-size: 4em;
 }
 
+.sign-up__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 0.7em;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
+}
+
 .review {
-  width: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 10px;
+  background-size: 20%;
+  background-image: url(../images/review/gold-leaf.webp);
+  padding-top: 30px;
   margin: 0 auto;
 }
-.review .review__icon-decoration {
-  max-width: 50%;
-  max-height: 30%;
+@media (max-width: 768px) {
+  .review {
+    background-size: 40%;
+  }
 }
 .review .review__titile-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 15px;
   gap: 1rem;
-  font-family: "Gilroy";
-  font-size: 1.25rem;
-  color: rgb(183, 117, 117);
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+  font-size: 2vw;
   margin-bottom: 10px;
 }
 .review .review__peoplesays {
@@ -270,6 +708,17 @@ button {
   height: 100%;
   margin: 0 auto 20px 0;
   padding: 30px;
+}
+@media (max-width: 1024px) {
+  .review .review__peoplesays {
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .review .review__peoplesays {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .review .review__peoplesays .review__firstperson {
   width: 100%;
@@ -282,6 +731,11 @@ button {
   grid-template-rows: 1fr;
   background-color: #fdfcfc;
 }
+@media (max-width: 1024px) {
+  .review .review__peoplesays .review__firstperson {
+    max-height: 100%;
+  }
+}
 .review .review__peoplesays .review__firstperson .review__img-firstperson {
   padding: 15px;
   margin: 0 auto;
@@ -291,6 +745,7 @@ button {
   margin: 0 auto;
   padding: 5px;
   grid-row: 2/3;
+  text-align: center;
 }
 .review .review__peoplesays .review__firstperson .review__date {
   margin: 0 auto;
@@ -304,10 +759,12 @@ button {
   padding-top: 25px;
   padding: 5px;
   margin: 0 auto 5px 0;
+  text-align: center;
 }
 .review .review__peoplesays .review__firstperson .review__icon-stars {
   margin: 0 auto;
   margin-bottom: 5px;
+  grid-row: 5/6;
 }
 .review .review__btn {
   display: flex;
