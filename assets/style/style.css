@@ -854,6 +854,9 @@ button {
   color: #ffffff;
 }
 
+.blog-post__title {
+  font-family: "Gilroy Light";
+}
 .blog-post__list {
   list-style: none;
   padding: 0;

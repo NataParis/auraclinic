@@ -969,6 +969,9 @@ margin: 0 auto 20px 0;
 
   // Styles for catalogue //
 .blog-post {
+    &__title {
+        font-family: 'Gilroy Light';
+    }
     &__list {
     list-style: none;
     padding: 0; 
