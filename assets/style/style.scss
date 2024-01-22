@@ -306,7 +306,8 @@ button {
     background-size: 100vw;
     color: $colordark;
     font-family: $font-gilroy;
-    margin-left: 8rem;
+    margin: auto 5rem;
+    max-width: 100%;
 }
 
     .input-box {
@@ -485,7 +486,7 @@ margin: 0 auto 20px 0;
     .personal__people{
         max-width: 100%;
         max-height: 100%;
-        gap: 5rem;
+        gap: 8rem;
         display: flex;
         justify-content: center;
         align-items:center;
@@ -505,13 +506,13 @@ margin: 0 auto 20px 0;
         .personal__person-one{
             max-width: 50%;
             max-height:100%;
-            border-radius:50%;
-           
+          
+        
             
             .personal__img-girl-one{
                 width: 100%;
                 margin: 0 auto;
-                border-radius:50%;
+                border-radius:15%;
             }
             .personal__daten-title-one{
                 color:rgb(94, 23, 13);
@@ -576,13 +577,13 @@ margin: 0 auto 20px 0;
         .personal__person-two{
             max-width: 50%;
             max-height:100%;
-            border-radius:50%;
+            
             
            
             .personal__img-girl-two{
                 width: 100%;
                 margin: 0 auto;
-                border-radius:50%;
+                border-radius:15%;
              
                 
             }
@@ -647,7 +648,7 @@ margin: 0 auto 20px 0;
             .personal__img-girl-three{
                 width: 100%;
                 margin: 0 auto;
-                border-radius:50%;    
+                border-radius:15%;  
             }
             .personal__daten-title-three{
                 color:rgb(94, 23, 13);
@@ -709,7 +710,7 @@ margin: 0 auto 20px 0;
             .personal__img-girl-four{
                 width: 100%;
                 margin: 0 auto;
-                border-radius:50%;
+                border-radius:15%;
                 
             }
             .personal__daten-title-four{
