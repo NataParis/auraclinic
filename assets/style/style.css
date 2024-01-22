@@ -104,7 +104,7 @@ button {
 
 /* Header */
 .header {
-  background-color: #FBEEDE;
+  background-color: #fbeede;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -150,7 +150,7 @@ button {
 .dropdown .button {
   border: none;
   outline: none;
-  background-color: #FBEEDE;
+  background-color: #fbeede;
 }
 .dropdown .dropdown_list {
   width: 2rem;
@@ -218,14 +218,14 @@ button {
 .results-block {
   width: 100%;
   text-align: center;
-  background-color: #FBEEDE;
+  background-color: #fbeede;
 }
 
 /* Certificates-block */
 .certificates-block {
   width: 100%;
   text-align: center;
-  background-color: #FBEEDE;
+  background-color: #fbeede;
 }
 .certificates-block .carousel-item {
   width: 100%;
@@ -235,7 +235,7 @@ button {
 .title {
   padding: 1em 0 0.5em 0;
   font-family: Gilroy Medium;
-  color: #551F25;
+  color: #551f25;
   font-size: 4em;
 }
 
@@ -392,7 +392,20 @@ button {
 }
 
 .btn-custom:hover {
-  background-color: #0E3F34;
+  background-color: #0e3f34;
   border-color: #750921;
   color: #ffffff;
+}
+
+.confident-title {
+  font-family: "Kosans", sans-serif;
+  text-align: center;
+  padding-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.confident-container {
+  text-align: left;
+  margin-left: 8rem;
+  padding-right: 6rem;
 }/*# sourceMappingURL=style.css.map */
