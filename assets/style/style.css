@@ -386,6 +386,11 @@ button {
   padding-top: 30px;
   margin: 0 auto 20px 0;
 }
+@media (max-width: 425px), (max-width: 767px) {
+  .personal .personal__title {
+    font-size: 4vw;
+  }
+}
 .personal .personal__icon {
   max-width: 70%;
   max-height: 100px;
@@ -439,7 +444,15 @@ button {
 }
 @media (max-width: 1024px) {
   .personal .personal__people {
-    gap: 1rem;
+    gap: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 .personal .personal__people .personal__person-one {
@@ -454,7 +467,8 @@ button {
 }
 .personal .personal__people .personal__person-one .personal__daten-title-one {
   color: rgb(94, 23, 13);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -466,25 +480,41 @@ button {
   .personal .personal__people .personal__person-one .personal__daten-title-one {
     max-width: 300px;
     max-height: 250px;
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 866px) {
+  .personal .personal__people .personal__person-one .personal__daten-title-one {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-one .personal__daten-title-one {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 1024px) {
   .personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-one .personal__btn {
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5vw;
   border-radius: 10px;
   background-color: rgb(215, 188, 185);
   color: white;
@@ -492,6 +522,10 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  /*  @media (max-width:767px){
+       max-width: 500px;
+       font-size: 3vw;
+       } */
 }
 .personal .personal__people .personal__person-two {
   max-width: 50%;
@@ -505,7 +539,8 @@ button {
 }
 .personal .personal__people .personal__person-two .personal__daten-title-two {
   color: rgb(94, 23, 13);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -517,25 +552,41 @@ button {
   .personal .personal__people .personal__person-two .personal__daten-title-two {
     max-width: 300px;
     max-height: 250px;
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 866px) {
+  .personal .personal__people .personal__person-two .personal__daten-title-two {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-two .personal__daten-title-two {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 1024px) {
   .personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-two .personal__btn {
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5vw;
   border-radius: 10px;
   background-color: rgb(215, 188, 185);
   color: white;
@@ -556,7 +607,8 @@ button {
 }
 .personal .personal__people .personal__person-three .personal__daten-title-three {
   color: rgb(94, 23, 13);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -568,25 +620,41 @@ button {
   .personal .personal__people .personal__person-three .personal__daten-title-three {
     max-width: 300px;
     max-height: 250px;
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 866px) {
+  .personal .personal__people .personal__person-three .personal__daten-title-three {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-three .personal__daten-title-three {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 1024px) {
   .personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-three .personal__btn {
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5vw;
   border-radius: 10px;
   background-color: rgb(215, 188, 185);
   color: white;
@@ -607,7 +675,8 @@ button {
 }
 .personal .personal__people .personal__person-four .personal__daten-title-four {
   color: rgb(94, 23, 13);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -619,25 +688,46 @@ button {
   .personal .personal__people .personal__person-four .personal__daten-title-four {
     max-width: 300px;
     max-height: 250px;
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-four .personal__daten-title-four {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 866px) {
+  .personal .personal__people .personal__person-four .personal__daten-title-four {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-four .personal__daten-title-four {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 1024px) {
   .personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
-    font-size: 20px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
+    font-size: 1.5rem;
   }
 }
 .personal .personal__people .personal__person-four .personal__btn {
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5vw;
   border-radius: 10px;
   background-color: rgb(215, 188, 185);
   color: white;

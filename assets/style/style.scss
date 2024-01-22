@@ -469,6 +469,10 @@ font-family: $font-gilroy;
 font-size: 2vw;
 padding-top: 30px;
 margin: 0 auto 20px 0;
+@media (max-width:425px) ,(max-width:767px){
+    font-size: 4vw;
+     
+    }
     }
   
 
@@ -486,15 +490,23 @@ margin: 0 auto 20px 0;
         justify-content: center;
         align-items:center;
 
-        @media (max-width:1024px){
-            gap: 1rem;
+        @media (max-width:1024px) {
+            gap: 2rem;
 
+        }
+        @media (max-width:767px){
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            
         }
         
         .personal__person-one{
             max-width: 50%;
             max-height:100%;
             border-radius:50%;
+           
             
             .personal__img-girl-one{
                 width: 100%;
@@ -503,7 +515,8 @@ margin: 0 auto 20px 0;
             }
             .personal__daten-title-one{
                 color:rgb(94, 23, 13);
-                font-size: 1.5rem;
+                font-size: 1rem;
+                font-family: $font-gilroy;
                 margin: 0 auto;
                 max-width: 100%;
                 max-height: 100%;
@@ -513,24 +526,37 @@ margin: 0 auto 20px 0;
                @media (max-width:1024px){
                 max-width: 300px;
                 max-height: 250px;
-                font-size: 20px;
+                font-size: 1rem;
             }
+            @media (max-width:866px){
+                font-size: 0.7rem;
+            }
+            @media (max-width:767px){
+                font-size: 1.5rem;
+                }
+           
                .personal__names{
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 2rem;
+                font-family: $font-gilroy;
+                font-size: 1.5rem;
                 margin: 0 auto;
                 text-align: center;
                 @media (max-width:1024px){
-                    font-size: 20px;
+                    font-size: 1rem;
                 }
+                @media (max-width:767px){
+                    font-size: 1.5rem;
+                   
+                    }
+                   
                }
                
             }
             .personal__btn {
+                font-family: $font-gilroy;
                 max-width: 100%;
                 display: flex;
                 text-align: center;
-                font-size: 16px;
+                font-size: 1.5vw;
                 border-radius: 10px;
                 background-color: rgb(215, 188, 185);
                 color:white;
@@ -538,6 +564,10 @@ margin: 0 auto 20px 0;
                 justify-content: center;
                 align-items:center;
                 margin: 0 auto;
+               /*  @media (max-width:767px){
+                    max-width: 500px;
+                    font-size: 3vw;
+                    } */
                 
                }
         }
@@ -558,7 +588,8 @@ margin: 0 auto 20px 0;
             }
             .personal__daten-title-two{
                 color:rgb(94, 23, 13);
-                font-size: 1.5rem;
+                font-size: 1rem;
+                font-family: $font-gilroy;
                 margin: 0 auto;
                 max-width: 100%;
                 max-height: 100%;
@@ -568,23 +599,33 @@ margin: 0 auto 20px 0;
                 @media (max-width:1024px){
                     max-width: 300px;
                     max-height: 250px;
-                    font-size: 20px;
+                    font-size: 1rem;
                 }
+                @media (max-width:866px){
+                    font-size: 0.7rem;
+                }
+                @media (max-width:767px){
+                    font-size: 1.5rem;
+                    }
                 .personal__names{
-                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                 font-size: 2rem;
+                 font-family: $font-gilroy;
+                 font-size: 1.5rem;
                  margin: 0 auto;
                  text-align: center;
                  @media (max-width:1024px){
-                    font-size: 20px;
+                    font-size: 1rem;
                 }
+                @media (max-width:767px){
+                    font-size: 1.5rem;
+                    }
                 }
             }
             .personal__btn{
+                font-family: $font-gilroy;
                 max-width: 100%;
                 display: flex;
                 text-align: center;
-                font-size: 16px;
+                font-size: 1.5vw;
                 border-radius: 10px;
                 background-color: rgb(215, 188, 185);
                 color:white;
@@ -610,7 +651,8 @@ margin: 0 auto 20px 0;
             }
             .personal__daten-title-three{
                 color:rgb(94, 23, 13);
-                font-size: 1.5rem;
+                font-size: 1rem;
+                font-family: $font-gilroy;
                 margin: 0 auto;
                 max-width: 100%;
                 max-height: 100%;
@@ -620,23 +662,33 @@ margin: 0 auto 20px 0;
                @media (max-width:1024px){
                 max-width: 300px;
                 max-height: 250px;
-                font-size: 20px;
+                font-size: 1rem;
             }
+            @media (max-width:866px){
+                font-size: 0.7rem;
+            }
+            @media (max-width:767px){
+                font-size: 1.5rem;
+                }
                .personal__names{
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 2rem;
+                font-family: $font-gilroy;
+                font-size: 1.5rem;
                 margin: 0 auto;
                 text-align: center;
                 @media (max-width:1024px){
-                    font-size: 20px;
+                    font-size: 1rem;
                 }
+                @media (max-width:767px){
+                    font-size: 1.5rem;
+                    }
                }
             }
             .personal__btn{
+                font-family: $font-gilroy;
                 max-width: 100%;
                 display: flex;
                 text-align: center;
-                font-size: 16px;
+                font-size: 1.5vw;
                 border-radius: 10px;
                 background-color: rgb(215, 188, 185);
                 color:white;
@@ -662,7 +714,8 @@ margin: 0 auto 20px 0;
             }
             .personal__daten-title-four{
                 color:rgb(94, 23, 13);
-                font-size: 1.5rem;
+                font-size: 1rem;
+                font-family: $font-gilroy;
                 margin: 0 auto;
                 max-width: 100%;
                 max-height: 100%;
@@ -672,23 +725,36 @@ margin: 0 auto 20px 0;
                @media (max-width:1024px){
                 max-width: 300px;
                 max-height: 250px;
-                font-size: 20px;
+                font-size: 1rem;
             }
+            @media (max-width:767px){
+                font-size: 1.5rem;
+                }
+            @media (max-width:866px){
+                font-size: 0.7rem;
+            }
+            @media (max-width:767px){
+                font-size: 1.5rem;
+                }
                .personal__names{
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 2rem;
+                font-family: $font-gilroy;
+                font-size: 1.5rem;
                 margin: 0 auto;
                 text-align: center;
                 @media (max-width:1024px){
-                    font-size: 20px;
+                    font-size: 1rem;
                 }
+                @media (max-width:767px){
+                    font-size: 1.5rem;
+                    }
                }
             }
             .personal__btn{
+                font-family: $font-gilroy;
                 max-width: 100%;
                 display: flex;
                 text-align: center;
-                font-size: 16px;
+                font-size: 1.5vw;
                 border-radius: 10px;
                 background-color: rgb(215, 188, 185);
                 color:white;
