@@ -908,13 +908,20 @@ margin: 0 auto 50px 0;
     background-repeat: no-repeat ;
     background-size: 20%;
     background-image: url(../images/review/gold-leaf.webp);
-    padding-top: 30px;
+    padding-top: 80px;
     margin: 0 auto;
+    @media (max-width:1024px){
+        background-size: 30%;
+     }
     @media (max-width:768px){
         background-size: 40%;
      }
+     @media (max-width:425px){
+        padding-top: 60px;
+     }
+
    
-    .review__titile-logo{
+    .review__title-logo{
      display: flex;
      justify-content: center;
      align-items: center;
@@ -923,6 +930,7 @@ margin: 0 auto 50px 0;
      font-family: $font-gilroy;
      font-size: 2vw;
      margin-bottom: 10px;
+   
     }
     
     
@@ -997,8 +1005,24 @@ margin: 0 auto 50px 0;
     .review__btn{
         display: flex;
         justify-content: center;
+        align-items:center;
+        text-align: center ;
         margin: 0 auto;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
+        font-size: 1vw;
+        background-color: $colorlight;
+       border: dotted 1px $colordark;
+      color: $colordark;
+      border-radius: 0%;
+        
+        @media (max-width:1024px){
+            width: 15%;
+            font-size: 1.8vw;
+         }
+         @media (max-width:768px){
+            width: 15%;
+            font-size: 2vw;
+         }
     }
 }
 
