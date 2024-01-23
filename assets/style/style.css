@@ -166,7 +166,7 @@ body {
 h2 {
   color: #400e19;
   font-family: "Gilroy", sans-serif;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 h3 {
@@ -185,12 +185,6 @@ button {
   border-radius: 5cap;
   font-size: 1.2em;
   color: #faeddd;
-}
-
-.bannerpic {
-  width: 100vw;
-  max-height: 50vh;
-  margin-top: 1rem;
 }
 
 .about {
@@ -986,4 +980,5 @@ button {
   text-align: left;
   margin-left: 8rem;
   padding-right: 6rem;
+  background-color: #faeddd;
 }/*# sourceMappingURL=style.css.map */

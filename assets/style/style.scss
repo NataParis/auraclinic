@@ -249,7 +249,7 @@ body {
 h2 {
   color: $colordark;
   font-family: $font-gilroy;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 h3 {
   color: $colordark;
@@ -267,12 +267,6 @@ button {
   font-size: 1.2em;
   color: $colorlight;
 }
-.bannerpic {
-  width: 100vw;
-  max-height: 50vh;
-  margin-top: 1rem;
-}
-
 .about {
   display: flex;
   margin: 3rem;
@@ -1013,4 +1007,5 @@ button {
   text-align: left;
   margin-left: 8rem;
   padding-right: 6rem;
+  background-color: $colorlight;
 }
