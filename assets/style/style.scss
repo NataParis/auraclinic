@@ -1,827 +1,794 @@
-@import 'vars';
-@import 'templates';
+@import "vars";
+@import "templates";
 
-@import '../style/vars.scss';
+@import "../style/vars.scss";
 @font-face {
-    font-family: 'Gilroy';
-    src: url('/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-ExtraBold.eot');
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-ExtraBold.woff') format('woff'),
-        url('Gilroy-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Heavy.eot');
-    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
-        url('Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Heavy.woff') format('woff'),
-        url('Gilroy-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-ExtraBold.eot");
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+    url("Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-ExtraBold.woff") format("woff"),
+    url("Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-LightItalic.eot');
-    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
-        url('Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-LightItalic.woff') format('woff'),
-        url('Gilroy-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"),
+    url("Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-Heavy.woff") format("woff"),
+    url("Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-ThinItalic.eot');
-    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
-        url('Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-ThinItalic.woff') format('woff'),
-        url('Gilroy-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-LightItalic.eot");
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"),
+    url("Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-LightItalic.woff") format("woff"),
+    url("Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-BlackItalic.eot');
-    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
-        url('Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-BlackItalic.woff') format('woff'),
-        url('Gilroy-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-ThinItalic.eot");
+  src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"),
+    url("Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-ThinItalic.woff") format("woff"),
+    url("Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-BoldItalic.eot');
-    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
-        url('Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-BoldItalic.woff') format('woff'),
-        url('Gilroy-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-BlackItalic.eot");
+  src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"),
+    url("Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-BlackItalic.woff") format("woff"),
+    url("Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-SemiBold.eot');
-    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-        url('Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-SemiBold.woff') format('woff'),
-        url('Gilroy-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-BoldItalic.eot");
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"),
+    url("Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-BoldItalic.woff") format("woff"),
+    url("Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-UltraLightItalic.eot');
-    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
-        url('Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-UltraLightItalic.woff') format('woff'),
-        url('Gilroy-UltraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"),
+    url("Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-SemiBold.woff") format("woff"),
+    url("Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-SemiBoldItalic.eot');
-    src: local('Gilroy SemiBold Italic'), local('Gilroy-SemiBoldItalic'),
-        url('Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-SemiBoldItalic.woff') format('woff'),
-        url('Gilroy-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-UltraLightItalic.eot");
+  src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"),
+    url("Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-UltraLightItalic.woff") format("woff"),
+    url("Gilroy-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Light.eot');
-    src: local('Gilroy Light'), local('Gilroy-Light'),
-        url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Light.woff') format('woff'),
-        url('Gilroy-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-SemiBoldItalic.eot");
+  src: local("Gilroy SemiBold Italic"), local("Gilroy-SemiBoldItalic"),
+    url("Gilroy-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-SemiBoldItalic.woff") format("woff"),
+    url("Gilroy-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-MediumItalic.eot');
-    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
-        url('Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-MediumItalic.woff') format('woff'),
-        url('Gilroy-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+    url("Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-Light.woff") format("woff"),
+    url("Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-ExtraBoldItalic.eot');
-    src: local('Gilroy ExtraBold Italic'), local('Gilroy-ExtraBoldItalic'),
-        url('Gilroy-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-ExtraBoldItalic.woff') format('woff'),
-        url('Gilroy-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-MediumItalic.eot");
+  src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"),
+    url("Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-MediumItalic.woff") format("woff"),
+    url("Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Regular.woff') format('woff'),
-        url('Gilroy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-ExtraBoldItalic.eot");
+  src: local("Gilroy ExtraBold Italic"), local("Gilroy-ExtraBoldItalic"),
+    url("Gilroy-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-ExtraBoldItalic.woff") format("woff"),
+    url("Gilroy-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-HeavyItalic.eot');
-    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
-        url('Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-HeavyItalic.woff') format('woff'),
-        url('Gilroy-HeavyItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-Regular.woff") format("woff"),
+    url("Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Medium.eot');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Medium.woff') format('woff'),
-        url('Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-HeavyItalic.eot");
+  src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"),
+    url("Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-HeavyItalic.woff") format("woff"),
+    url("Gilroy-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-RegularItalic.eot');
-    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
-        url('Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-RegularItalic.woff') format('woff'),
-        url('Gilroy-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Gilroy";
+  src: url("Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-Medium.woff") format("woff"),
+    url("Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-UltraLight.eot');
-    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
-        url('Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-UltraLight.woff') format('woff'),
-        url('Gilroy-UltraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-RegularItalic.eot");
+  src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"),
+    url("Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-RegularItalic.woff") format("woff"),
+    url("Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Bold.eot');
-    src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Bold.woff') format('woff'),
-        url('Gilroy-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"),
+    url("Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-UltraLight.woff") format("woff"),
+    url("Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Thin.eot');
-    src: local('Gilroy Thin'), local('Gilroy-Thin'),
-        url('Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Thin.woff') format('woff'),
-        url('Gilroy-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-Bold.woff") format("woff"),
+    url("Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Black.eot');
-    src: local('Gilroy Black'), local('Gilroy-Black'),
-        url('Gilroy-Black.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Black.woff') format('woff'),
-        url('Gilroy-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Kosans';
-    src: url('/assets/fonts/KosansDemoRegular-z8G8G.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"),
+    url("Gilroy-Thin.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-Thin.woff") format("woff"),
+    url("Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'KosansRegular';
-    src: url('/assets/fonts/Kosans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Gilroy";
+  src: url("Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"),
+    url("Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+    url("Gilroy-Black.woff") format("woff"),
+    url("Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kosans";
+  src: url("/assets/fonts/KosansDemoRegular-z8G8G.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KosansRegular";
+  src: url("/assets/fonts/Kosans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: $colorlight;
-    max-width: 100%;
+  background-color: $colorlight;
+  max-width: 100%;
 }
 h2 {
-    color: $colordark;
-    font-family: $font-gilroy;
-    font-size: 2vw;
+  color: $colordark;
+  font-family: $font-gilroy;
+  font-size: 2vw;
 }
 h3 {
-    color: $colordark;
-    font-family: $font-gilroy;
-    font-style: italic;
-    font-size: 1.2vw;
-    font-weight: lighter;
+  color: $colordark;
+  font-family: $font-gilroy;
+  font-style: italic;
+  font-size: 1.2vw;
+  font-weight: lighter;
 }
 button {
-    width: 10vw;
-    height: 5vh;
-    background-color: $colordark;
-    border: none;
-    border-radius: 5cap;
-    font-size: 1.2em;
-    color: $colorlight;
+  width: 10vw;
+  height: 5vh;
+  background-color: $colordark;
+  border: none;
+  border-radius: 5cap;
+  font-size: 1.2em;
+  color: $colorlight;
 }
-  .bannerpic {
-    width: 100vw;
-    max-height: 50vh;
-    margin-top: 1rem;
+.bannerpic {
+  width: 100vw;
+  max-height: 50vh;
+  margin-top: 1rem;
 }
 
 .about {
-    display: flex;
-    margin: 3rem;
-    h2 {
-        margin-bottom: 2rem;
-    }
-    .picabout {
-        border-radius: 2cap;
-        flex-basis: 40%;
-        max-height: 60vh;
-        max-width: 40vw;
-        flex-basis: 35%;
-    
-    }
-    .clinicscript {
-        font-size: 20px;
-        font-weight: lighter;
-        text-align: center;
-        padding-left: 4rem;
-    }
+  display: flex;
+  margin: 3rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .picabout {
+    border-radius: 2cap;
+    flex-basis: 40%;
+    max-height: 60vh;
+    max-width: 40vw;
+    flex-basis: 35%;
+  }
+  .clinicscript {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    padding-left: 4rem;
+  }
 }
 .submit {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 80vw;
-    min-height: 20vh;
-    border-radius: 4cap;
-    background-image: url(/assets/images/iStock-1200557416.jpg);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    color: $colordark;
-    font-family: $font-gilroy;
-    margin: auto 5rem;
-    max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80vw;
+  min-height: 20vh;
+  border-radius: 4cap;
+  background-image: url(/assets/images/iStock-1200557416.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  color: $colordark;
+  font-family: $font-gilroy;
+  margin: auto 5rem;
+  max-width: 100%;
 }
 
-    .input-box {
-        display: flex;
-        gap: 3rem;
-    .inputname {
-        border: none;
-        border-radius: 2cap;
-        width: 15vw;
-        height: 6vh;
-        text-align: center;
-        font-style: italic;
-    }
+.input-box {
+  display: flex;
+  gap: 3rem;
+  .inputname {
+    border: none;
+    border-radius: 2cap;
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    font-style: italic;
   }
+}
 
 /* Header */
 .header {
-    width: 100%;
-    max-width: 100%;
-	background-color: $colorlight;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-	.header-block {
-		display: grid;
-		grid-template-columns: 20% 50% 10% 20%;
-		width: 95%;
-		height: 90%;
-		margin: 0 auto;
-		.header-block__menu {
-			padding-top: 3%;
-			.nav-link {
-				font-family: $font-gilroy;
-				color: $colordark;
-				font-size: 1.6rem;
-			}
-		}
-		.header-block_logo {
-			width: 100%;
-		}
-        .header-block__button {
-            display: flex;
-            align-items: center;
-            justify-content: end;
+  width: 100%;
+  max-width: 100%;
+  background-color: $colorlight;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  .header-block {
+    display: grid;
+    grid-template-columns: 20% 50% 10% 20%;
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+    .header-block__menu {
+      padding-top: 3%;
+      .nav-link {
+        font-family: $font-gilroy;
+        color: $colordark;
+        font-size: 1.6rem;
+      }
+    }
+    .header-block_logo {
+      width: 100%;
+    }
+    .header-block__button {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+    .header-block__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .header-block__contacts_telephone {
+        font-family: $font-gilroy;
+        color: $colordark;
+        font-size: 1.6rem;
+      }
+      .header-block__apps {
+        display: flex;
+        justify-content: end;
+        gap: 1em;
+        .header-block_icon {
+          width: 2.7rem;
         }
-		.header-block__contacts {
-			display: flex;
-			flex-direction: column;
-			align-items: end;
-			.header-block__contacts_telephone {
-				font-family: $font-gilroy;
-				color: $colordark;
-				font-size: 1.6rem;
-			}
-			.header-block__apps {
-				display: flex;
-				justify-content: end;
-				gap: 1em;
-				.header-block_icon {
-					width: 2.7rem;
-				}
-			}
-			
-		}
-	}
+      }
+    }
+  }
 }
 /* Burger-list */
-	.dropdown {
-		.button {
-			border: none;
-			outline: none;
-			background-color: $colorlight;
-		}
-		.dropdown_list {
-			width: 2rem;
-			color: $colordark;
-		}
-		.dropdown_item {
-			font-family: $font-gilroy;
-			color: $colordark;
-			font-size: 1.2rem;
-		}
-	}
+.dropdown {
+  .button {
+    border: none;
+    outline: none;
+    background-color: $colorlight;
+  }
+  .dropdown_list {
+    width: 2rem;
+    color: $colordark;
+  }
+  .dropdown_item {
+    font-family: $font-gilroy;
+    color: $colordark;
+    font-size: 1.2rem;
+  }
+}
 
 /* Main banner-gallery */
 .main-banner__gallery {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
 }
 
-
-
 /* Services-block */
-	.services__title {
-        text-align: center;
-        margin-bottom: 2.5rem;
-        font-family: $font-gilroy;
-        color: $colordark;
-        margin-bottom: 50px;
-        padding-top: 30px;
-      }
-      .services__container {
-        display: flex;
-        text-align: center;
-        align-content: space-around;
-        margin-bottom: 3rem;
-      }
-      .services-but {
-       background-color: $colorlight;
-       border: dotted 1px $colordark;
-      color: $colordark;
-      border-radius: 0%;
-      }
-      .pict-size {
-        max-width: 55%;
-      }
-      .category-title {
-        font-size: 1.5rem;
-        margin-bottom: 16px;
-        font-family: $font-gilroy;
-        color: $colordark;
-        font-weight: bolder;
-      }
-     
-      .cosmetology-pict {
-        margin-bottom: 1rem;
-        border-radius: 15%;
-       
-      }
-      .epilation-pict {
-        margin-bottom: 10px;
-        border-radius: 15%;
-      }
-      .body-pict {
-        margin-bottom: 10px;
-        border-radius: 15%;
-      }
-      
+.services__title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: $font-gilroy;
+  color: $colordark;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+.services__container {
+  display: flex;
+  text-align: center;
+  align-content: space-around;
+  margin-bottom: 3rem;
+}
+.services-but {
+  background-color: $colorlight;
+  border: dotted 1px $colordark;
+  color: $colordark;
+  border-radius: 0%;
+}
+.pict-size {
+  max-width: 55%;
+}
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-family: $font-gilroy;
+  color: $colordark;
+  font-weight: bolder;
+}
+
+.cosmetology-pict {
+  margin-bottom: 1rem;
+  border-radius: 15%;
+}
+.epilation-pict {
+  margin-bottom: 10px;
+  border-radius: 15%;
+}
+.body-pict {
+  margin-bottom: 10px;
+  border-radius: 15%;
+}
 
 /* Results-block */
 .results-block {
-	width: 100%;
-	text-align: center;
-	background-color: $colorlight;
+  width: 100%;
+  text-align: center;
+  background-color: $colorlight;
 }
 
-
 //team block//
-.team{
-    margin: 0 auto;
+.team {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: $colorlight;
+
+  .team__title {
+    text-align: center;
+    color: $colordark;
+    font-family: $font-gilroy;
+    font-size: 2vw;
+    padding-top: 100px;
+    margin: 0 auto 50px 0;
+    @media (max-width: 425px), (max-width: 767px) {
+      font-size: 4vw;
+    }
+  }
+
+  .team__icon {
+    max-width: 70%;
+    max-height: 100px;
+  }
+
+  .team__people {
     max-width: 100%;
-    max-height:100%;
-    background-color: $colorlight;
-    
+    max-height: 100%;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 50px 0;
 
-    
-  .team__title{
-text-align: center;
-color: $colordark;
-font-family: $font-gilroy;
-font-size: 2vw;
-padding-top: 100px;
-margin: 0 auto 50px 0;
-@media (max-width:425px) ,(max-width:767px){
-    font-size: 4vw;
-     
+    @media (max-width: 1024px) {
+      gap: 2rem;
     }
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
-  
 
-    .team__icon{
-        max-width: 70%;
-        max-height: 100px;
-    }
-   
+    .team__person-one {
+      max-width: 50%;
+      max-height: 100%;
 
-    .team__people{
+      .team__img-girl-one {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 15%;
+      }
+      .team__doc-title-one {
+        color: rgb(94, 23, 13);
+        font-size: 1rem;
+        font-family: $font-gilroy;
+        margin: 0 auto;
         max-width: 100%;
         max-height: 100%;
-        gap: 5rem;
+        padding-top: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        @media (max-width: 1024px) {
+          max-width: 300px;
+          max-height: 250px;
+          font-size: 1rem;
+        }
+        @media (max-width: 866px) {
+          font-size: 0.7rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 1rem;
+        }
+
+        .team__names {
+          font-family: $font-gilroy;
+          font-size: 1.5rem;
+          margin: 0 auto;
+          text-align: center;
+          @media (max-width: 1024px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.5rem;
+          }
+          @media (max-width: 425px) {
+            font-size: 1rem;
+          }
+        }
+      }
+      .team__btn {
+        font-family: $font-gilroy;
+        max-width: 100%;
         display: flex;
+        text-align: center;
+        font-size: 1.2vw;
+        border-radius: 10px;
+        background-color: rgb(215, 188, 185);
+        color: white;
+        cursor: pointer;
         justify-content: center;
-        align-items:center;
-        margin: 0 auto 50px 0;
-
-        @media (max-width:1024px) {
-            gap: 2rem;
-
+        align-items: center;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+          width: 30%;
+          font-size: 2vw;
         }
-        @media (max-width:767px){
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            flex-direction: column;
-            
+        @media (max-width: 425px) {
+          width: 40%;
+          font-size: 3vw;
         }
-        
-        .team__person-one{
-            max-width: 50%;
-            max-height:100%;
-          
-        
-            
-            .team__img-girl-one{
-                width: 100%;
-                margin: 0 auto;
-                border-radius:15%;
-            }
-            .team__doc-title-one{
-                color:rgb(94, 23, 13);
-                font-size: 1rem;
-                font-family: $font-gilroy;
-                margin: 0 auto;
-                max-width: 100%;
-                max-height: 100%;
-               padding-top: 30px;
-               text-align: center;
-               margin-bottom: 20px;
-               @media (max-width:1024px){
-                max-width: 300px;
-                max-height: 250px;
-                font-size: 1rem;
-            }
-            @media (max-width:866px){
-                font-size: 0.7rem;
-            }
-            @media (max-width:767px){
-                font-size: 1.5rem;
-                }
-                @media (max-width:425px){
-                    font-size: 1rem;
-                    }
-           
-               .team__names{
-                font-family: $font-gilroy;
-                font-size: 1.5rem;
-                margin: 0 auto;
-                text-align: center;
-                @media (max-width:1024px){
-                    font-size: 1rem;
-                }
-                @media (max-width:767px){
-                    font-size: 1.5rem;
-                   
-                    }
-                    @media (max-width:425px){
-                        font-size: 1rem;
-                        }
-                   
-               }
-               
-            }
-            .team__btn {
-                font-family: $font-gilroy;
-                max-width: 100%;
-                display: flex;
-                text-align: center;
-                font-size: 1.2vw;
-                border-radius: 10px;
-                background-color: rgb(215, 188, 185);
-                color:white;
-                cursor: pointer;
-                justify-content: center;
-                align-items:center;
-                margin: 0 auto;
-                @media (max-width:767px){
-                    width: 30%;
-                        font-size: 2vw;
-                    
-                    }
-                    @media (max-width:425px){
-                        width: 40%;
-                    font-size: 3vw;
-                        }
-               }
+      }
+    }
+
+    .team__person-two {
+      max-width: 50%;
+      max-height: 100%;
+
+      .team__img-girl-two {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 15%;
+      }
+      .team__doc-title-two {
+        color: rgb(94, 23, 13);
+        font-size: 1rem;
+        font-family: $font-gilroy;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        @media (max-width: 1024px) {
+          max-width: 300px;
+          max-height: 250px;
+          font-size: 1rem;
         }
-
-
-        .team__person-two{
-            max-width: 50%;
-            max-height:100%;
-            
-            
-           
-            .team__img-girl-two{
-                width: 100%;
-                margin: 0 auto;
-                border-radius:15%;
-             
-                
-            }
-            .team__doc-title-two{
-                color:rgb(94, 23, 13);
-                font-size: 1rem;
-                font-family: $font-gilroy;
-                margin: 0 auto;
-                max-width: 100%;
-                max-height: 100%;
-                padding-top: 30px;
-                text-align: center;
-                margin-bottom: 20px;
-                @media (max-width:1024px){
-                    max-width: 300px;
-                    max-height: 250px;
-                    font-size: 1rem;
-                }
-                @media (max-width:866px){
-                    font-size: 0.7rem;
-                }
-                @media (max-width:767px){
-                    font-size: 1.5rem;
-                    }
-                    @media (max-width:425px){
-                        font-size: 1rem;
-                        }
-                .team__names{
-                 font-family: $font-gilroy;
-                 font-size: 1.5rem;
-                 margin: 0 auto;
-                 text-align: center;
-                 @media (max-width:1024px){
-                    font-size: 1rem;
-                }
-                @media (max-width:767px){
-                    font-size: 1.5rem;
-                    }
-                }
-                @media (max-width:425px){
-                    font-size: 1rem;
-                    }
-            }
-            .team__btn{
-                font-family: $font-gilroy;
-                max-width: 100%;
-                display: flex;
-                text-align: center;
-                font-size: 1.2vw;
-                border-radius: 10px;
-                background-color: rgb(215, 188, 185);
-                color:white;
-                cursor: pointer;
-                justify-content: center;
-                align-items:center;
-                margin: 0 auto;
-                @media (max-width:767px){
-                    width: 30%;
-                        font-size: 2vw;
-                    
-                    }
-                    @media (max-width:425px){
-                        width: 40%;
-                    font-size: 3vw;
-                        }
-               }
-            
+        @media (max-width: 866px) {
+          font-size: 0.7rem;
         }
-
-        .team__person-three{
-            max-width: 50%;
-            max-height:100%;
-            border-radius:50%;
-            
-            
-            .team__img-girl-three{
-                width: 100%;
-                margin: 0 auto;
-                border-radius:15%;  
-            }
-            .team__doc-title-three{
-                color:rgb(94, 23, 13);
-                font-size: 1rem;
-                font-family: $font-gilroy;
-                margin: 0 auto;
-                max-width: 100%;
-                max-height: 100%;
-               padding-top: 30px;
-               text-align: center;
-               margin-bottom: 20px;
-               @media (max-width:1024px){
-                max-width: 300px;
-                max-height: 250px;
-                font-size: 1rem;
-            }
-            @media (max-width:866px){
-                font-size: 0.7rem;
-            }
-            @media (max-width:767px){
-                font-size: 1.5rem;
-                }
-                @media (max-width:425px){
-                    font-size: 1rem;
-                    }
-               .team__names{
-                font-family: $font-gilroy;
-                font-size: 1.5rem;
-                margin: 0 auto;
-                text-align: center;
-                @media (max-width:1024px){
-                    font-size: 1rem;
-                }
-                @media (max-width:767px){
-                    font-size: 1.5rem;
-                    }
-               }
-               @media (max-width:425px){
-                font-size: 1rem;
-                }
-            }
-            .team__btn{
-                font-family: $font-gilroy;
-                max-width: 100%;
-                display: flex;
-                text-align: center;
-                font-size: 1.2vw;
-                border-radius: 10px;
-                background-color: rgb(215, 188, 185);
-                color:white;
-                cursor: pointer;
-                justify-content: center;
-                align-items:center;
-                margin: 0 auto;
-                @media (max-width:767px){
-                    width: 30%;
-                        font-size: 2vw;
-                    
-                    }
-                    @media (max-width:425px){
-                        width: 40%;
-                    font-size: 3vw;
-                        }
-               }
-            
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
         }
-
-        .team__person-four{
-            max-width: 50%;
-            max-height:100%;
-            border-radius:50%;
-            
-            .team__img-girl-four{
-                width: 100%;
-                margin: 0 auto;
-                border-radius:15%;
-                
-            }
-            .team__doc-title-four{
-                color:rgb(94, 23, 13);
-                font-size: 1rem;
-                font-family: $font-gilroy;
-                margin: 0 auto;
-                max-width: 100%;
-                max-height: 100%;
-               padding-top: 30px;
-               text-align: center;
-               margin-bottom: 20px;
-               @media (max-width:1024px){
-                max-width: 300px;
-                max-height: 250px;
-                font-size: 1rem;
-            }
-            @media (max-width:767px){
-                font-size: 1.5rem;
-                }
-            @media (max-width:866px){
-                font-size: 0.7rem;
-            }
-            @media (max-width:767px){
-                font-size: 1.5rem;
-                }
-                @media (max-width:425px){
-                    font-size: 1rem;
-                    }
-               .team__names{
-                font-family: $font-gilroy;
-                font-size: 1.5rem;
-                margin: 0 auto;
-                text-align: center;
-                @media (max-width:1024px){
-                    font-size: 1rem;
-                }
-                @media (max-width:767px){
-                    font-size: 1.5rem;
-                    }
-               }
-               @media (max-width:425px){
-                font-size: 1rem;
-                }
-            }
-            .team__btn{
-                font-family: $font-gilroy;
-                max-width: 100%;
-                display: flex;
-                text-align: center;
-                font-size: 1.2vw;
-                border-radius: 10px;
-                background-color: rgb(215, 188, 185);
-                color:white;
-                cursor: pointer;
-                justify-content: center;
-                align-items:center;
-                margin: 0 auto;
-                @media (max-width:767px){
-                    width: 30%;
-                        font-size: 2vw;
-                    
-                    }
-                    @media (max-width:425px){
-                        width: 40%;
-                    font-size: 3vw;
-                        }
-               }
-            
+        @media (max-width: 425px) {
+          font-size: 1rem;
         }
+        .team__names {
+          font-family: $font-gilroy;
+          font-size: 1.5rem;
+          margin: 0 auto;
+          text-align: center;
+          @media (max-width: 1024px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.5rem;
+          }
+        }
+        @media (max-width: 425px) {
+          font-size: 1rem;
+        }
+      }
+      .team__btn {
+        font-family: $font-gilroy;
+        max-width: 100%;
+        display: flex;
+        text-align: center;
+        font-size: 1.2vw;
+        border-radius: 10px;
+        background-color: rgb(215, 188, 185);
+        color: white;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+          width: 30%;
+          font-size: 2vw;
+        }
+        @media (max-width: 425px) {
+          width: 40%;
+          font-size: 3vw;
+        }
+      }
+    }
 
-       /*  .team__person-fife{
+    .team__person-three {
+      max-width: 50%;
+      max-height: 100%;
+      border-radius: 50%;
+
+      .team__img-girl-three {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 15%;
+      }
+      .team__doc-title-three {
+        color: rgb(94, 23, 13);
+        font-size: 1rem;
+        font-family: $font-gilroy;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        @media (max-width: 1024px) {
+          max-width: 300px;
+          max-height: 250px;
+          font-size: 1rem;
+        }
+        @media (max-width: 866px) {
+          font-size: 0.7rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 1rem;
+        }
+        .team__names {
+          font-family: $font-gilroy;
+          font-size: 1.5rem;
+          margin: 0 auto;
+          text-align: center;
+          @media (max-width: 1024px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.5rem;
+          }
+        }
+        @media (max-width: 425px) {
+          font-size: 1rem;
+        }
+      }
+      .team__btn {
+        font-family: $font-gilroy;
+        max-width: 100%;
+        display: flex;
+        text-align: center;
+        font-size: 1.2vw;
+        border-radius: 10px;
+        background-color: rgb(215, 188, 185);
+        color: white;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+          width: 30%;
+          font-size: 2vw;
+        }
+        @media (max-width: 425px) {
+          width: 40%;
+          font-size: 3vw;
+        }
+      }
+    }
+
+    .team__person-four {
+      max-width: 50%;
+      max-height: 100%;
+      border-radius: 50%;
+
+      .team__img-girl-four {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 15%;
+      }
+      .team__doc-title-four {
+        color: rgb(94, 23, 13);
+        font-size: 1rem;
+        font-family: $font-gilroy;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        @media (max-width: 1024px) {
+          max-width: 300px;
+          max-height: 250px;
+          font-size: 1rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
+        }
+        @media (max-width: 866px) {
+          font-size: 0.7rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 1rem;
+        }
+        .team__names {
+          font-family: $font-gilroy;
+          font-size: 1.5rem;
+          margin: 0 auto;
+          text-align: center;
+          @media (max-width: 1024px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.5rem;
+          }
+        }
+        @media (max-width: 425px) {
+          font-size: 1rem;
+        }
+      }
+      .team__btn {
+        font-family: $font-gilroy;
+        max-width: 100%;
+        display: flex;
+        text-align: center;
+        font-size: 1.2vw;
+        border-radius: 10px;
+        background-color: rgb(215, 188, 185);
+        color: white;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+          width: 30%;
+          font-size: 2vw;
+        }
+        @media (max-width: 425px) {
+          width: 40%;
+          font-size: 3vw;
+        }
+      }
+    }
+
+    /*  .team__person-fife{
            max-width: 50%;
             max-height:100%;
             border-radius:50%;
@@ -864,279 +831,277 @@ margin: 0 auto 50px 0;
                 
                }
         }  */
-    } 
+  }
 }
-
-
 
 //end of team block//
 
 /* Certificates-block */
 .certificates-block {
-	width: 100%;
-	text-align: center;
-	background-color: $colorlight;
-    .certificates-block__slides {
-        width: 50%;
-        margin: 0 auto;
-        }
+  width: 100%;
+  text-align: center;
+  background-color: $colorlight;
+  .certificates-block__slides {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 /* Separates blocks */
 .title {
-	padding: 1em 0 0.5em 0;
-	font-family: Gilroy Medium;
-	color: $colordark;
-	font-size: 4em;
+  padding: 1em 0 0.5em 0;
+  font-family: Gilroy Medium;
+  color: $colordark;
+  font-size: 4em;
 }
 
 .sign-up__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 0.7em;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
+}
+
+//review block//
+.review {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-image: url(../images/review/gold-leaf.webp);
+  padding-top: 30px;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    background-size: 40%;
+  }
+
+  .review__titile-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
-    border-radius: 0.7em;
-    background-color: rgb(215, 188, 185);
-    color:white;
-    cursor: pointer;
-}
+    gap: 1rem;
+    color: $colordark;
+    font-family: $font-gilroy;
+    font-size: 2vw;
+    margin-bottom: 10px;
+  }
 
-
-//review block//
-.review{
-    max-width: 100%;
-    background-repeat: no-repeat ;
-    background-size: 20%;
-    background-image: url(../images/review/gold-leaf.webp);
-    padding-top: 30px;
-    margin: 0 auto;
-    @media (max-width:768px){
-        background-size: 40%;
-     }
-   
-    .review__titile-logo{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 1rem;
-     color: $colordark;
-     font-family: $font-gilroy;
-     font-size: 2vw;
-     margin-bottom: 10px;
+  .review__peoplesays {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 20px 0;
+    padding: 30px;
+    @media (max-width: 1024px) {
+      gap: 2rem;
     }
-    
-    
-    .review__peoplesays{
-      
-     display: flex;
-     justify-content: center;
-     gap: 5rem;
-     width: 100%;
-     height: 100%;
-     margin: 0 auto 20px 0;
-     padding: 30px;
-     @media (max-width:1024px){
-        gap: 2rem;
-     }
-     @media (max-width:768px){
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-     }
-     
-     
-     .review__firstperson{
-         width: 100%;
-         max-height: 500px;
-         border-radius: 22px;
-         border: solid white 1px;
-         display: grid;
-         color:rgb(63, 20, 20);
-         grid-template-columns: 1fr ;
-         grid-template-rows: 1fr ;
-         background-color:#fdfcfc;
-         @media (max-width:1024px){
-            max-height: 100%;
-         }
-        
-         .review__img-firstperson{
-            padding: 15px;
-            margin: 0 auto;
-            border-radius:50%;
-         }
-         .review__name-surname{
-            margin: 0 auto;
-            padding: 5px;
-            grid-row: 2/3;
-            text-align: center;
-         }
-         .review__date{
-            margin: 0 auto;
-            grid-row: 3/4;
-
-         }
-        
-         .review__text-first{
-             grid-column: 1/2;
-             grid-row: 4/5;
-             text-align: center;
-             max-width:100% ;
-             padding-top: 25px;
-             padding: 5px;
-             margin: 0 auto 5px 0;
-             text-align: center;
-         }
-         .review__icon-stars{
-            margin: 0 auto ;
-            margin-bottom: 5px;
-            grid-row: 5/6;
-
-         }
-     }
-     
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
-    .review__btn{
-        display: flex;
-        justify-content: center;
+
+    .review__firstperson {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 22px;
+      border: solid white 1px;
+      display: grid;
+      color: rgb(63, 20, 20);
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      background-color: #fdfcfc;
+      @media (max-width: 1024px) {
+        max-height: 100%;
+      }
+
+      .review__img-firstperson {
+        padding: 15px;
         margin: 0 auto;
-        margin-bottom: 30px;
+        border-radius: 50%;
+      }
+      .review__name-surname {
+        margin: 0 auto;
+        padding: 5px;
+        grid-row: 2/3;
+        text-align: center;
+      }
+      .review__date {
+        margin: 0 auto;
+        grid-row: 3/4;
+      }
+
+      .review__text-first {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 25px;
+        padding: 5px;
+        margin: 0 auto 5px 0;
+        text-align: center;
+      }
+      .review__icon-stars {
+        margin: 0 auto;
+        margin-bottom: 5px;
+        grid-row: 5/6;
+      }
     }
+  }
+  .review__btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 //end of review block//
 
 // Footer styles //
 .footer {
-    font-family: 'Gilroy', serif;
-    margin-top: 6rem;
-    background-color: $colordark;
+  font-family: "Gilroy", serif;
+  margin-top: 6rem;
+  background-color: $colordark;
+  color: $colorlight;
+  .logo-image {
+    width: 11vw;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  &__sections-list,
+  &__services-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  &__contact-title,
+  &__sections-title,
+  &__services-title {
+    margin-bottom: 2.5rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    font-family: $font-gilroy;
     color: $colorlight;
-    .logo-image {
-        width: 11vw;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-    }
-    &__sections-list,
-    &__services-list{
-        list-style: none;
-        padding-left: 0;
-    }
-    &__contact-title,
-    &__sections-title,
-    &__services-title {
-        margin-bottom: 2.5rem;
-        padding-right: 2rem;
-        text-decoration: none;
-        font-family: $font-gilroy;
-        color: $colorlight;
-        font-size: 18px;
-        font-weight: bolder;
-        
-    }
-    &__disclaimer-text{
-        font-family: $font-gilroy;
-        color: $colorlight;
-        padding-top: 0.5em;
-        font-weight: bolder;
-    }
-    &__links-and-button {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  &__disclaimer-text {
+    font-family: $font-gilroy;
+    color: $colorlight;
+    padding-top: 0.5em;
+    font-weight: bolder;
+  }
+  &__links-and-button {
     font-family: $font-gilroy;
     display: flex;
     gap: 10rem;
     font-size: 18px;
     padding-bottom: 2rem;
-}
-    &__license {
-        margin-top: 1rem;
-    }
-    &__contact-info,
-    &__sections,
-    &__services {
-        margin-top: 30px;
-}
+  }
+  &__license {
+    margin-top: 1rem;
+  }
+  &__contact-info,
+  &__sections,
+  &__services {
+    margin-top: 30px;
+  }
 
-    &__footer-social img {
-        max-width: 30px;
-    }
-    &__link{
-        color: rgb(152, 148, 148); 
-        text-decoration: none; 
+  &__footer-social img {
+    max-width: 30px;
+  }
+  &__link {
+    color: rgb(152, 148, 148);
+    text-decoration: none;
     .link:hover {
-        text-decoration: underline;
+      text-decoration: underline;
     }
     .link:visited {
-        color: black;
+      color: black;
     }
+  }
 }
+.email-link {
+  text-decoration: none;
+  color: rgb(152, 148, 148);
+  font-size: larger;
 }
-    .email-link {
-        text-decoration: none; 
-        color: rgb(152, 148, 148); 
-        font-size: larger;
-    }
 
-    .email-link:hover {
-        text-decoration: underline; 
-    }
+.email-link:hover {
+  text-decoration: underline;
+}
 
 .btn-custom {
-    background-color:  #400e19; 
-    color: $colorlight; 
-    font-size: 1em;
-    width: 17rem;
-    border-radius: 2cap;
+  background-color: #400e19;
+  color: $colorlight;
+  font-size: 1em;
+  width: 17rem;
+  border-radius: 2cap;
 }
 
 .btn-custom:hover {
-    background-color:  #0E3F34;
-    border-color:  #750921;
-    color: #ffffff;
+  background-color: #0e3f34;
+  border-color: #750921;
+  color: #ffffff;
 }
 
-  // Styles for catalogue //
+// Styles for catalogue //
 .blog-post {
-    &__title, 
-    &__subtitle {
-        font-family: 'Gilroy';
-        font-size: 24px;
-        font-weight: 400;
-        font-style: normal;
-    }
-    
-    &__text {
-        font-family: 'Gilroy';
-        font-size: 18px;    
-    }
-    &__list {
+  &__title,
+  &__subtitle {
+    font-family: "Gilroy";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__text {
+    font-family: "Gilroy";
+    font-size: 18px;
+  }
+  &__list {
     list-style: none;
-    padding: 0; 
-    background-color: #faeddd;  
-}
-    &__table {
-        width: 100%;
-        border-collapse: collapse; 
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    &__table-header {
-        font-family: 'Gilroy';
-        color:#400e19;
-    }
-.blog-post__list li {
-    margin-bottom: 5px; 
+    padding: 0;
+    background-color: #faeddd;
+  }
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__table-header {
+    font-family: "Gilroy";
+    color: #400e19;
+  }
+  .blog-post__list li {
+    margin-bottom: 5px;
     padding: 8px;
-    font-family: 'Gilroy';
-    }
+    font-family: "Gilroy";
+  }
 }
 
-.blog-post__table>tbody>tr:nth-of-type(even) {
-    background-color: rgb(215, 188, 185);
+.blog-post__table > tbody > tr:nth-of-type(even) {
+  background-color: rgb(215, 188, 185);
 }
 
-.blog-post__table>tbody>tr:nth-of-type(odd) {
-    background-color: rgb(215, 188, 185);
+.blog-post__table > tbody > tr:nth-of-type(odd) {
+  background-color: rgb(215, 188, 185);
 }
 
-
-
-
-
+// confedential //
+.confident-title {
+  font-family: $font-kosans;
+  text-align: center;
+  padding-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+.confident-container {
+  text-align: left;
+  margin-left: 8rem;
+  padding-right: 6rem;
+}
