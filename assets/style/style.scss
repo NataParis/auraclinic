@@ -1046,7 +1046,7 @@ margin: 0 auto 20px 0;
     
     &__text {
         font-family: 'Gilroy';
-        font-size: 18px;    
+        font-size: 16px;    
     }
     &__list {
     list-style: none;
@@ -1059,25 +1059,21 @@ margin: 0 auto 20px 0;
         border-radius: 10px;
         overflow: hidden;
     }
-    &__table-header {
-        font-family: 'Gilroy';
-        color:#400e19;
-    }
+}
 .blog-post__list li {
     margin-bottom: 5px; 
     padding: 8px;
     font-family: 'Gilroy';
+    color: dimgray;
     }
-}
 
-.blog-post__table>tbody>tr:nth-of-type(even) {
-    background-color: rgb(215, 188, 185);
+.blog-post__table tbody tr:nth-child(odd) {
+    background-color:rgb(215, 188, 185);
 }
-
-.blog-post__table>tbody>tr:nth-of-type(odd) {
-    background-color: rgb(215, 188, 185);
+    
+.blog-post__table tbody tr:nth-child(even) {
+    background-color: #e9ecef; 
 }
-
 
 
 
