@@ -943,8 +943,15 @@ button {
   color: #ffffff;
 }
 
-.blog-post__title {
-  font-family: "Gilroy Light";
+.blog-post__title, .blog-post__subtitle {
+  font-family: "Gilroy";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+.blog-post__text {
+  font-family: "Gilroy";
+  font-size: 18px;
 }
 .blog-post__list {
   list-style: none;
@@ -957,8 +964,20 @@ button {
   border-radius: 10px;
   overflow: hidden;
 }
+.blog-post__table-header {
+  font-family: "Gilroy";
+  color: #400e19;
+}
 .blog-post .blog-post__list li {
   margin-bottom: 5px;
   padding: 8px;
-  color: dimgray;
+  font-family: "Gilroy";
+}
+
+.blog-post__table > tbody > tr:nth-of-type(even) {
+  background-color: rgb(215, 188, 185);
+}
+
+.blog-post__table > tbody > tr:nth-of-type(odd) {
+  background-color: rgb(215, 188, 185);
 }/*# sourceMappingURL=style.css.map */
