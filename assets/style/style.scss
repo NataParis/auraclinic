@@ -1033,3 +1033,52 @@ margin: 0 auto 20px 0;
     border-color:  #750921;
     color: #ffffff;
 }
+
+  // Styles for catalogue //
+.blog-post {
+    &__title, 
+    &__subtitle {
+        font-family: 'Gilroy';
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    &__text {
+        font-family: 'Gilroy';
+        font-size: 18px;    
+    }
+    &__list {
+    list-style: none;
+    padding: 0; 
+    background-color: #faeddd;  
+}
+    &__table {
+        width: 100%;
+        border-collapse: collapse; 
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &__table-header {
+        font-family: 'Gilroy';
+        color:#400e19;
+    }
+.blog-post__list li {
+    margin-bottom: 5px; 
+    padding: 8px;
+    font-family: 'Gilroy';
+    }
+}
+
+.blog-post__table>tbody>tr:nth-of-type(even) {
+    background-color: rgb(215, 188, 185);
+}
+
+.blog-post__table>tbody>tr:nth-of-type(odd) {
+    background-color: rgb(215, 188, 185);
+}
+
+
+
+
+
