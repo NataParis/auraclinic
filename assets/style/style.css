@@ -373,99 +373,104 @@ button {
   background-color: #faeddd;
 }
 
-.personal {
+.team {
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
   background-color: #faeddd;
 }
-.personal .personal__title {
+.team .team__title {
   text-align: center;
   color: #400e19;
   font-family: "Gilroy", sans-serif;
   font-size: 2vw;
-  padding-top: 30px;
-  margin: 0 auto 20px 0;
+  padding-top: 100px;
+  margin: 0 auto 50px 0;
 }
 @media (max-width: 425px), (max-width: 767px) {
-  .personal .personal__title {
+  .team .team__title {
     font-size: 4vw;
   }
 }
-.personal .personal__icon {
+.team .team__icon {
   max-width: 70%;
   max-height: 100px;
 }
-.personal .personal__people {
+.team .team__people {
   max-width: 100%;
   max-height: 100%;
-  gap: 8rem;
+  gap: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*  .personal__person-fife{
-       width: 100%;
-           margin: 0 auto;
-           border-radius:50%;
+  margin: 0 auto 50px 0;
+  /*  .team__person-fife{
+      max-width: 50%;
+       max-height:100%;
+       border-radius:50%;
 
-       .personal__img-girl-fife{
-           width: 100%;
+       .team__img-girl-fife{
+          width: 100%;
            margin: 0 auto;
-           border-radius:50%;
+           border-radius:15%;
        }
-       .personal__daten-title-fife{
-           color:rgb(94, 23, 13);
-           font-size: 1.5rem;
+       .team__doc-title-fife{
+          color:rgb(94, 23, 13);
+           font-size: 1rem;
+           font-family: $font-gilroy;
            margin: 0 auto;
            max-width: 100%;
            max-height: 100%;
           padding-top: 30px;
           text-align: center;
           margin-bottom: 20px;
-          .personal__names{
-           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-           font-size: 2rem;
+          .team__names{
+           font-family: $font-gilroy;
+           font-size: 1.5rem;
            margin: 0 auto;
            text-align: center;
           }
        }
-       .personal__btn{
+       .team__btn{
+          font-family: $font-gilroy;
+           max-width: 100%;
            display: flex;
-           padding: 10px 20px;
-           font-size: 16px;
+           text-align: center;
+           font-size: 1.2vw;
            border-radius: 10px;
            background-color: rgb(215, 188, 185);
            color:white;
            cursor: pointer;
            justify-content: center;
+           align-items:center;
            margin: 0 auto;
 
           }
    }  */
 }
 @media (max-width: 1024px) {
-  .personal .personal__people {
+  .team .team__people {
     gap: 2rem;
   }
 }
 @media (max-width: 767px) {
-  .personal .personal__people {
+  .team .team__people {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 }
-.personal .personal__people .personal__person-one {
+.team .team__people .team__person-one {
   max-width: 50%;
   max-height: 100%;
 }
-.personal .personal__people .personal__person-one .personal__img-girl-one {
+.team .team__people .team__person-one .team__img-girl-one {
   width: 100%;
   margin: 0 auto;
   border-radius: 15%;
 }
-.personal .personal__people .personal__person-one .personal__daten-title-one {
+.team .team__people .team__person-one .team__doc-title-one {
   color: rgb(94, 23, 13);
   font-size: 1rem;
   font-family: "Gilroy", sans-serif;
@@ -477,44 +482,54 @@ button {
   margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
-  .personal .personal__people .personal__person-one .personal__daten-title-one {
+  .team .team__people .team__person-one .team__doc-title-one {
     max-width: 300px;
     max-height: 250px;
     font-size: 1rem;
   }
 }
 @media (max-width: 866px) {
-  .personal .personal__people .personal__person-one .personal__daten-title-one {
+  .team .team__people .team__person-one .team__doc-title-one {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 767px) {
-  .personal .personal__people .personal__person-one .personal__daten-title-one {
+  .team .team__people .team__person-one .team__doc-title-one {
     font-size: 1.5rem;
   }
 }
-.personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
+@media (max-width: 425px) {
+  .team .team__people .team__person-one .team__doc-title-one {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-one .team__doc-title-one .team__names {
   font-family: "Gilroy", sans-serif;
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 1024px) {
-  .personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
+  .team .team__people .team__person-one .team__doc-title-one .team__names {
     font-size: 1rem;
   }
 }
 @media (max-width: 767px) {
-  .personal .personal__people .personal__person-one .personal__daten-title-one .personal__names {
+  .team .team__people .team__person-one .team__doc-title-one .team__names {
     font-size: 1.5rem;
   }
 }
-.personal .personal__people .personal__person-one .personal__btn {
+@media (max-width: 425px) {
+  .team .team__people .team__person-one .team__doc-title-one .team__names {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-one .team__btn {
   font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   border-radius: 10px;
   background-color: rgb(215, 188, 185);
   color: white;
@@ -522,21 +537,29 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /*  @media (max-width:767px){
-       max-width: 500px;
-       font-size: 3vw;
-       } */
 }
-.personal .personal__people .personal__person-two {
+@media (max-width: 767px) {
+  .team .team__people .team__person-one .team__btn {
+    width: 30%;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 425px) {
+  .team .team__people .team__person-one .team__btn {
+    width: 40%;
+    font-size: 3vw;
+  }
+}
+.team .team__people .team__person-two {
   max-width: 50%;
   max-height: 100%;
 }
-.personal .personal__people .personal__person-two .personal__img-girl-two {
+.team .team__people .team__person-two .team__img-girl-two {
   width: 100%;
   margin: 0 auto;
   border-radius: 15%;
 }
-.personal .personal__people .personal__person-two .personal__daten-title-two {
+.team .team__people .team__person-two .team__doc-title-two {
   color: rgb(94, 23, 13);
   font-size: 1rem;
   font-family: "Gilroy", sans-serif;
@@ -548,44 +571,54 @@ button {
   margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
-  .personal .personal__people .personal__person-two .personal__daten-title-two {
+  .team .team__people .team__person-two .team__doc-title-two {
     max-width: 300px;
     max-height: 250px;
     font-size: 1rem;
   }
 }
 @media (max-width: 866px) {
-  .personal .personal__people .personal__person-two .personal__daten-title-two {
+  .team .team__people .team__person-two .team__doc-title-two {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 767px) {
-  .personal .personal__people .personal__person-two .personal__daten-title-two {
+  .team .team__people .team__person-two .team__doc-title-two {
     font-size: 1.5rem;
   }
 }
-.personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
+@media (max-width: 425px) {
+  .team .team__people .team__person-two .team__doc-title-two {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-two .team__doc-title-two .team__names {
   font-family: "Gilroy", sans-serif;
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 1024px) {
-  .personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
+  .team .team__people .team__person-two .team__doc-title-two .team__names {
     font-size: 1rem;
   }
 }
 @media (max-width: 767px) {
-  .personal .personal__people .personal__person-two .personal__daten-title-two .personal__names {
+  .team .team__people .team__person-two .team__doc-title-two .team__names {
     font-size: 1.5rem;
   }
 }
-.personal .personal__people .personal__person-two .personal__btn {
+@media (max-width: 425px) {
+  .team .team__people .team__person-two .team__doc-title-two {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-two .team__btn {
   font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   border-radius: 10px;
   background-color: rgb(215, 188, 185);
   color: white;
@@ -594,85 +627,29 @@ button {
   align-items: center;
   margin: 0 auto;
 }
-.personal .personal__people .personal__person-three {
-  max-width: 50%;
-  max-height: 100%;
-  border-radius: 50%;
-}
-.personal .personal__people .personal__person-three .personal__img-girl-three {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 15%;
-}
-.personal .personal__people .personal__person-three .personal__daten-title-three {
-  color: rgb(94, 23, 13);
-  font-size: 1rem;
-  font-family: "Gilroy", sans-serif;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 100%;
-  padding-top: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-@media (max-width: 1024px) {
-  .personal .personal__people .personal__person-three .personal__daten-title-three {
-    max-width: 300px;
-    max-height: 250px;
-    font-size: 1rem;
-  }
-}
-@media (max-width: 866px) {
-  .personal .personal__people .personal__person-three .personal__daten-title-three {
-    font-size: 0.7rem;
-  }
-}
 @media (max-width: 767px) {
-  .personal .personal__people .personal__person-three .personal__daten-title-three {
-    font-size: 1.5rem;
+  .team .team__people .team__person-two .team__btn {
+    width: 30%;
+    font-size: 2vw;
   }
 }
-.personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
-  font-family: "Gilroy", sans-serif;
-  font-size: 1.5rem;
-  margin: 0 auto;
-  text-align: center;
-}
-@media (max-width: 1024px) {
-  .personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
-    font-size: 1rem;
+@media (max-width: 425px) {
+  .team .team__people .team__person-two .team__btn {
+    width: 40%;
+    font-size: 3vw;
   }
 }
-@media (max-width: 767px) {
-  .personal .personal__people .personal__person-three .personal__daten-title-three .personal__names {
-    font-size: 1.5rem;
-  }
-}
-.personal .personal__people .personal__person-three .personal__btn {
-  font-family: "Gilroy", sans-serif;
-  max-width: 100%;
-  display: flex;
-  text-align: center;
-  font-size: 1.5vw;
-  border-radius: 10px;
-  background-color: rgb(215, 188, 185);
-  color: white;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-.personal .personal__people .personal__person-four {
+.team .team__people .team__person-three {
   max-width: 50%;
   max-height: 100%;
   border-radius: 50%;
 }
-.personal .personal__people .personal__person-four .personal__img-girl-four {
+.team .team__people .team__person-three .team__img-girl-three {
   width: 100%;
   margin: 0 auto;
   border-radius: 15%;
 }
-.personal .personal__people .personal__person-four .personal__daten-title-four {
+.team .team__people .team__person-three .team__doc-title-three {
   color: rgb(94, 23, 13);
   font-size: 1rem;
   font-family: "Gilroy", sans-serif;
@@ -684,49 +661,54 @@ button {
   margin-bottom: 20px;
 }
 @media (max-width: 1024px) {
-  .personal .personal__people .personal__person-four .personal__daten-title-four {
+  .team .team__people .team__person-three .team__doc-title-three {
     max-width: 300px;
     max-height: 250px;
     font-size: 1rem;
   }
 }
-@media (max-width: 767px) {
-  .personal .personal__people .personal__person-four .personal__daten-title-four {
-    font-size: 1.5rem;
-  }
-}
 @media (max-width: 866px) {
-  .personal .personal__people .personal__person-four .personal__daten-title-four {
+  .team .team__people .team__person-three .team__doc-title-three {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 767px) {
-  .personal .personal__people .personal__person-four .personal__daten-title-four {
+  .team .team__people .team__person-three .team__doc-title-three {
     font-size: 1.5rem;
   }
 }
-.personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
+@media (max-width: 425px) {
+  .team .team__people .team__person-three .team__doc-title-three {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-three .team__doc-title-three .team__names {
   font-family: "Gilroy", sans-serif;
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
 @media (max-width: 1024px) {
-  .personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
+  .team .team__people .team__person-three .team__doc-title-three .team__names {
     font-size: 1rem;
   }
 }
 @media (max-width: 767px) {
-  .personal .personal__people .personal__person-four .personal__daten-title-four .personal__names {
+  .team .team__people .team__person-three .team__doc-title-three .team__names {
     font-size: 1.5rem;
   }
 }
-.personal .personal__people .personal__person-four .personal__btn {
+@media (max-width: 425px) {
+  .team .team__people .team__person-three .team__doc-title-three {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-three .team__btn {
   font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   border-radius: 10px;
   background-color: rgb(215, 188, 185);
   color: white;
@@ -734,6 +716,113 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .team .team__people .team__person-three .team__btn {
+    width: 30%;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 425px) {
+  .team .team__people .team__person-three .team__btn {
+    width: 40%;
+    font-size: 3vw;
+  }
+}
+.team .team__people .team__person-four {
+  max-width: 50%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+.team .team__people .team__person-four .team__img-girl-four {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15%;
+}
+.team .team__people .team__person-four .team__doc-title-four {
+  color: rgb(94, 23, 13);
+  font-size: 1rem;
+  font-family: "Gilroy", sans-serif;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .team .team__people .team__person-four .team__doc-title-four {
+    max-width: 300px;
+    max-height: 250px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .team .team__people .team__person-four .team__doc-title-four {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 866px) {
+  .team .team__people .team__person-four .team__doc-title-four {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  .team .team__people .team__person-four .team__doc-title-four {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .team .team__people .team__person-four .team__doc-title-four {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-four .team__doc-title-four .team__names {
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .team .team__people .team__person-four .team__doc-title-four .team__names {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .team .team__people .team__person-four .team__doc-title-four .team__names {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .team .team__people .team__person-four .team__doc-title-four {
+    font-size: 1rem;
+  }
+}
+.team .team__people .team__person-four .team__btn {
+  font-family: "Gilroy", sans-serif;
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 1.2vw;
+  border-radius: 10px;
+  background-color: rgb(215, 188, 185);
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .team .team__people .team__person-four .team__btn {
+    width: 30%;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 425px) {
+  .team .team__people .team__person-four .team__btn {
+    width: 40%;
+    font-size: 3vw;
+  }
 }
 
 /* Certificates-block */
