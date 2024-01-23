@@ -963,6 +963,7 @@ button {
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
+  --bs-table-bg: none;
 }
 
 .blog-post__list li {
@@ -972,10 +973,14 @@ button {
   color: dimgray;
 }
 
+.blog-post__table thead th {
+  background-color: rgb(235, 214, 212);
+}
+
 .blog-post__table tbody tr:nth-child(odd) {
   background-color: rgb(215, 188, 185);
 }
 
 .blog-post__table tbody tr:nth-child(even) {
-  background-color: #e9ecef;
+  background-color: rgb(235, 214, 212);
 }/*# sourceMappingURL=style.css.map */
