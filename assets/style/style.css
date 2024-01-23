@@ -405,48 +405,48 @@ button {
   align-items: center;
   margin: 0 auto 50px 0;
   /*  .team__person-fife{
-      max-width: 50%;
-       max-height:100%;
-       border-radius:50%;
+         max-width: 50%;
+          max-height:100%;
+          border-radius:50%;
 
-       .team__img-girl-fife{
-          width: 100%;
-           margin: 0 auto;
-           border-radius:15%;
-       }
-       .team__doc-title-fife{
-          color:rgb(94, 23, 13);
-           font-size: 1rem;
-           font-family: $font-gilroy;
-           margin: 0 auto;
-           max-width: 100%;
-           max-height: 100%;
-          padding-top: 30px;
-          text-align: center;
-          margin-bottom: 20px;
-          .team__names{
-           font-family: $font-gilroy;
-           font-size: 1.5rem;
-           margin: 0 auto;
-           text-align: center;
+          .team__img-girl-fife{
+             width: 100%;
+              margin: 0 auto;
+              border-radius:15%;
           }
-       }
-       .team__btn{
-          font-family: $font-gilroy;
-           max-width: 100%;
-           display: flex;
-           text-align: center;
-           font-size: 1.2vw;
-           border-radius: 10px;
-           background-color: rgb(215, 188, 185);
-           color:white;
-           cursor: pointer;
-           justify-content: center;
-           align-items:center;
-           margin: 0 auto;
+          .team__doc-title-fife{
+             color:rgb(94, 23, 13);
+              font-size: 1rem;
+              font-family: $font-gilroy;
+              margin: 0 auto;
+              max-width: 100%;
+              max-height: 100%;
+             padding-top: 30px;
+             text-align: center;
+             margin-bottom: 20px;
+             .team__names{
+              font-family: $font-gilroy;
+              font-size: 1.5rem;
+              margin: 0 auto;
+              text-align: center;
+             }
+          }
+          .team__btn{
+             font-family: $font-gilroy;
+              max-width: 100%;
+              display: flex;
+              text-align: center;
+              font-size: 1.2vw;
+              border-radius: 10px;
+              background-color: rgb(215, 188, 185);
+              color:white;
+              cursor: pointer;
+              justify-content: center;
+              align-items:center;
+              margin: 0 auto;
 
-          }
-   }  */
+             }
+      }  */
 }
 @media (max-width: 1024px) {
   .team .team__people {
@@ -1056,7 +1056,7 @@ button {
 }
 
 .btn-custom:hover {
-  background-color: #0E3F34;
+  background-color: #0e3f34;
   border-color: #750921;
   color: #ffffff;
 }
@@ -1098,4 +1098,17 @@ button {
 
 .blog-post__table > tbody > tr:nth-of-type(odd) {
   background-color: rgb(215, 188, 185);
+}
+
+.confident-title {
+  font-family: "Kosans", sans-serif;
+  text-align: center;
+  padding-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.confident-container {
+  text-align: left;
+  margin-left: 8rem;
+  padding-right: 6rem;
 }/*# sourceMappingURL=style.css.map */
