@@ -1057,6 +1057,12 @@ button {
     }
   }
 }
+.social-icon {
+  fill: #faeddd;
+  width: 34px;
+  height: 32px;
+}
+
 .email-link {
   text-decoration: none;
   color: rgb(152, 148, 148);
@@ -1098,38 +1104,38 @@ button {
 
   &__text {
     font-family: "Gilroy";
-    font-size: 18px;
+    font-size: 16px;
   }
   &__list {
     list-style: none;
-    padding: 0;
-    background-color: #faeddd;
-  }
-  &__table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  &__table-header {
-    font-family: "Gilroy";
-    color: #400e19;
-  }
-  .blog-post__list li {
-    margin-bottom: 5px;
+    padding: 0; 
+    background-color: #faeddd;  
+}
+    &__table {
+        width: 100%;
+        border-collapse: collapse; 
+        border-radius: 10px;
+        overflow: hidden;
+        --bs-table-bg: none;
+    }
+}
+.blog-post__list li {
+    margin-bottom: 5px; 
     padding: 8px;
-    font-family: "Gilroy";
-  }
-}
+    font-family: 'Gilroy';
+    color: dimgray;
+    }
 
-.blog-post__table > tbody > tr:nth-of-type(even) {
-  background-color: rgb(215, 188, 185);
+.blog-post__table thead th {
+    background-color: rgb(235, 214, 212);
+}    
+.blog-post__table tbody tr:nth-child(odd) {
+    background-color:rgb(215, 188, 185);
 }
-
-.blog-post__table > tbody > tr:nth-of-type(odd) {
-  background-color: rgb(215, 188, 185);
+    
+.blog-post__table tbody tr:nth-child(even) {
+    background-color:  rgb(235, 214, 212); 
 }
-
 // confidentiality policy//
 .confident-title {
   font-family: $font-kosans;
