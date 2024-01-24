@@ -1070,6 +1070,12 @@ button {
   color: #ffffff;
 }
 
+.social-icon {
+  fill: #faeddd;
+  width: 34px;
+  height: 32px;
+}
+
 .blog-post__title, .blog-post__subtitle {
   font-family: "Gilroy";
   font-size: 24px;
