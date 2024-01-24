@@ -1046,6 +1046,12 @@ button {
   color: black;
 }
 
+.social-icon {
+  fill: #faeddd;
+  width: 34px;
+  height: 32px;
+}
+
 .email-link {
   text-decoration: none;
   color: rgb(152, 148, 148);
