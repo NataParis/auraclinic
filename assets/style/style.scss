@@ -259,13 +259,13 @@ h3 {
   font-weight: lighter;
 }
 button {
-  width: 10vw;
-  height: 5vh;
-  background-color: $colordark;
+  width: 13vw;
+  height: 7vh;
+  background-color: rgb(215, 188, 185);
   border: none;
-  border-radius: 5cap;
-  font-size: 1.2em;
-  color: $colorlight;
+  border-radius: 1cap;
+  font-size: 1.2vw;
+  color: white;
 }
 .about {
   display: flex;
@@ -288,33 +288,45 @@ button {
   }
 }
 .submit {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   max-width: 80vw;
-  min-height: 20vh;
   border-radius: 4cap;
   background-image: url(/assets/images/iStock-1200557416.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100%;
   color: $colordark;
   font-family: $font-gilroy;
   margin: auto 5rem;
   max-width: 100%;
 }
-
-.input-box {
-  display: flex;
-  gap: 3rem;
-  .inputname {
-    border: none;
-    border-radius: 2cap;
-    width: 15vw;
-    height: 6vh;
-    text-align: center;
-    font-style: italic;
+.submit__content {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  h2 {
+    padding-left: 5rem;
   }
 }
+.consent {
+  padding-left: 5rem;
+  font-size: 1.2vw;
+  font-family: $font-gilroy;
+
+}
+  .inputname {
+    border: none;
+    border-radius: 1cap;
+    width: 40vw;
+    height: 6vh;
+    text-align: center;
+   margin-bottom: 2rem;
+   font-size: 1vw;
+  }
+  .subline {
+    display: flex;
+    gap: 6rem;
+    padding-bottom: 2rem;
+  }
+
 
 /* Header */
 .header {
@@ -867,8 +879,8 @@ button {
 //review block//
 .review {
   max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: 20%;
+  background-repeat:repeat-y;
+  background-size: 25%;
   background-image: url(../images/review/gold-leaf.webp);
   margin: 6rem auto;
   .review__name {
@@ -1086,7 +1098,7 @@ button {
   background-color: rgb(215, 188, 185);
 }
 
-// confedential //
+// confidentiality policy//
 .confident-title {
   font-family: $font-kosans;
   text-align: center;
