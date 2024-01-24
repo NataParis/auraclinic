@@ -409,16 +409,20 @@ button {
   border: dotted 1px $colordark;
   color: $colordark;
   border-radius: 0%;
+  width: 10rem;
+  .service__link {
+    text-decoration: none;
+    color: black;
+  }
 }
 .pict-size {
   max-width: 55%;
 }
 .category-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 16px;
   font-family: $font-gilroy;
   color: $colordark;
-  font-weight: bolder;
 }
 
 .cosmetology-pict {
@@ -861,7 +865,93 @@ button {
 }
 
 //review block//
+.review {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-image: url(../images/review/gold-leaf.webp);
+  margin: 6rem auto;
+  .review__name {
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    background-size: 40%;
+  }
+  .review__peoplesays {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 20px 0;
+    padding: 5rem;
+    @media (max-width: 1024px) {
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
+    .review__firstperson {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 22px;
+      border: solid white 1px;
+      display: grid;
+      color: rgb(63, 20, 20);
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      background-color: #fdfcfc;
+      @media (max-width: 1024px) {
+        max-height: 100%;
+      }
+
+      .review__img-firstperson {
+        padding: 15px;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+      .review__name-surname {
+        margin: 0 auto;
+        padding: 5px;
+        grid-row: 2/3;
+        text-align: center;
+      }
+      .review__date {
+        margin: 0 auto;
+        grid-row: 3/4;
+      }
+
+      .review__text-first {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 25px;
+        padding: 5px;
+        margin: 0 auto 5px 0;
+        text-align: center;
+      }
+      .review__icon-stars {
+        margin: 0 auto;
+        margin-bottom: 5px;
+        grid-row: 5/6;
+      }
+    }
+  }
+  .review__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: $colorlight;
+    border-radius: 0%;
+    color: black;
+    border: dotted 1px $colordark;
+    width: 15rem;
+  }
+}
 
 //end of review block//
 
