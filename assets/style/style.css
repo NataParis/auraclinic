@@ -166,7 +166,9 @@ body {
 h2 {
   color: #400e19;
   font-family: "Gilroy", sans-serif;
-  font-size: 2.5vw;
+  font-size: 2.3vw;
+  font-style: normal;
+  text-align: center;
 }
 
 h3 {
@@ -187,6 +189,7 @@ button {
   color: white;
 }
 
+/* Block About */
 .about {
   display: flex;
   margin: 3rem;
@@ -197,21 +200,25 @@ button {
 .about .picabout {
   border-radius: 2cap;
   flex-basis: 40%;
-  max-height: 60vh;
+  max-height: 80vh;
   max-width: 40vw;
   flex-basis: 35%;
 }
 .about .clinicscript {
   font-size: 20px;
-  font-weight: lighter;
-  text-align: center;
+  text-align: start;
   padding-left: 4rem;
+  font-family: "Gilroy", sans-serif;
+}
+.about .plus__title {
+  padding-bottom: 1rem;
 }
 
+/* Block Registration form */
 .submit {
   max-width: 80vw;
   border-radius: 4cap;
-  background-image: url(/assets/images/iStock-1200557416.jpg);
+  background-image: url(/assets/images/opacityback.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   color: #400e19;
@@ -225,8 +232,11 @@ button {
   display: grid;
   grid-template-columns: 40% 60%;
 }
-.submit__content h2 {
+.submit__content .form__title {
   padding-left: 5rem;
+  color: #400e19;
+  font-family: "Gilroy", sans-serif;
+  font-size: 2vw;
 }
 
 .consent {
@@ -247,7 +257,7 @@ button {
 
 .subline {
   display: flex;
-  gap: 6rem;
+  gap: 5rem;
   padding-bottom: 2rem;
 }
 
