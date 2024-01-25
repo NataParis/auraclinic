@@ -166,7 +166,7 @@ body {
 h2 {
   color: #400e19;
   font-family: "Gilroy", sans-serif;
-  font-size: 2.3vw;
+  font-size: 2.3rem;
   font-style: normal;
   text-align: center;
 }
@@ -175,13 +175,13 @@ h3 {
   color: #400e19;
   font-family: "Gilroy", sans-serif;
   font-style: italic;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
 button {
-  width: 13vw;
-  height: 7vh;
+  width: 13rem;
+  height: 3rem;
   background-color: rgb(215, 188, 185);
   border: none;
   border-radius: 1cap;
@@ -213,9 +213,17 @@ button {
 .about .plus__title {
   padding-bottom: 1rem;
 }
+@media (max-width: 1024px) {
+  .about {
+    margin: 0 auto;
+  }
+  .about .picabout {
+    display: none;
+  }
+}
 
 /* Block Registration form */
-.submit {
+.submit__form {
   max-width: 80vw;
   border-radius: 4cap;
   background-image: url(/assets/images/opacityback.jpg);
@@ -223,8 +231,33 @@ button {
   background-size: 100%;
   color: #400e19;
   font-family: "Gilroy", sans-serif;
-  margin: auto 5rem;
+  margin: auto 2rem;
   max-width: 100%;
+}
+@media (max-width: 1024px) {
+  .submit__form {
+    background-size: 150%;
+  }
+  .submit__form .subline {
+    gap: 1em;
+  }
+  .submit__form .subline .subline__button {
+    height: 2vh;
+  }
+}
+@media (max-width: 768px) {
+  .submit__form {
+    background-size: 280%;
+  }
+  .submit__form .submit__content {
+    grid-template-columns: 50% 50%;
+  }
+  .submit__form .submit__content .submit__form__title {
+    font-size: 1.3rem;
+  }
+  .submit__form .consent {
+    font-size: 0.7rem;
+  }
 }
 
 .submit__content {
@@ -232,33 +265,33 @@ button {
   display: grid;
   grid-template-columns: 40% 60%;
 }
-.submit__content .form__title {
-  padding-left: 5rem;
+.submit__content .submit__form__title {
+  padding-left: 3rem;
   color: #400e19;
   font-family: "Gilroy", sans-serif;
-  font-size: 2vw;
+  font-size: 2.5rem;
 }
 
 .consent {
-  padding-left: 5rem;
-  font-size: 1.2vw;
+  padding-left: 3rem;
+  font-size: 1.2em;
   font-family: "Gilroy", sans-serif;
 }
 
 .inputname {
   border: none;
   border-radius: 1cap;
-  width: 40vw;
-  height: 6vh;
+  width: 40em;
+  height: 3em;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
   font-size: 1vw;
 }
 
 .subline {
   display: flex;
-  gap: 5rem;
   padding-bottom: 2rem;
+  gap: 14rem;
 }
 
 /* Header */
