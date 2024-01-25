@@ -262,7 +262,6 @@ button {
 .submit__form .subline .consent {
   font-size: 1.2em;
   font-family: "Gilroy", sans-serif;
-  padding-left: 0;
 }
 @media (max-width: 768px) {
   .submit__form .subline {
