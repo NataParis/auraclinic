@@ -527,6 +527,11 @@ button {
   max-height: 100%;
   background-color: #faeddd;
 }
+@media (max-width: 1024px) {
+  .team {
+    max-width: 90%;
+  }
+}
 .team .team__title {
   text-align: center;
   color: #400e19;
@@ -598,7 +603,12 @@ button {
 }
 @media (max-width: 1024px) {
   .team .team__people {
-    gap: 2rem;
+    gap: 1rem;
+  }
+}
+@media (max-width: 940px) {
+  .team .team__people {
+    gap: 0.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -607,6 +617,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 3rem;
   }
 }
 .team .team__people .team__person-one {
@@ -685,6 +696,12 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .team .team__people .team__person-one .team__btn {
+    width: 40%;
+    font-size: 1vw;
+  }
 }
 @media (max-width: 767px) {
   .team .team__people .team__person-one .team__btn {
@@ -775,6 +792,12 @@ button {
   align-items: center;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  .team .team__people .team__person-two .team__btn {
+    width: 40%;
+    font-size: 1vw;
+  }
+}
 @media (max-width: 767px) {
   .team .team__people .team__person-two .team__btn {
     width: 30%;
@@ -864,6 +887,12 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .team .team__people .team__person-three .team__btn {
+    width: 40%;
+    font-size: 1vw;
+  }
 }
 @media (max-width: 767px) {
   .team .team__people .team__person-three .team__btn {
@@ -959,6 +988,12 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .team .team__people .team__person-four .team__btn {
+    width: 40%;
+    font-size: 1vw;
+  }
 }
 @media (max-width: 767px) {
   .team .team__people .team__person-four .team__btn {
