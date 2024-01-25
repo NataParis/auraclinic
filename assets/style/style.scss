@@ -1083,6 +1083,9 @@ button {
   margin-top: 6rem;
   background-color: $colordark;
   color: $colorlight;
+  .container-fluid {
+    width: 100%;
+  }
   .logo-image {
     width: 11vw;
     padding-top: 2rem;
@@ -1107,7 +1110,6 @@ button {
   &__disclaimer-text {
     font-family: $font-gilroy;
     color: $colorlight;
-    padding-top: 0.5em;
     font-weight: bolder;
   }
   &__links-and-button {
