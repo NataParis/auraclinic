@@ -293,10 +293,12 @@ button {
     padding-bottom: 1rem;
   }
   @media (max-width: 1024px)  {
-    .picabout {
-      display: none;
+    .clinicscript {
+    font-size: 18px;
   }
-    margin: 0 auto;
+    .picabout {
+      display: none;  
+  }
 }
 }
 /* Block Registration form */
@@ -310,62 +312,58 @@ button {
   font-family: $font-gilroy;
   margin: auto 2rem;
   max-width: 100%;
+  .submit__content {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    .submit__form__title {
+      padding-left: 3rem;
+      color: $colordark;
+      font-family: $font-gilroy;
+      font-size: 2.5rem;
+    }
+    .inputname {
+      border: none;
+      border-radius: 1cap;
+      width: 85%;
+      height: 3em;
+      text-align: center;
+     margin-bottom: 2em;
+     font-size: 1vw;
+    }
+  }
+   .subline {
+      display: flex;
+      padding: 2rem 3rem;
+      gap: 14rem;
+         
+  .consent {
+        font-size: 1.2em;
+        font-family: $font-gilroy;
+        padding-left: 0;
+        }
+    @media (max-width: 768px)  {
+          gap: 1rem;
+          font-size: 0.7rem;
+          .subline_button {
+            width: 40%;
+            height: 2rem;
+          }
+            }
+    }
   @media (max-width: 1024px)  {
     background-size:150%;
-    .subline {
-      gap: 1em;
-      .subline__button {
-        height: 2vh;
       }
-      }
-    }
   @media (max-width: 768px)  {
-        background-size:280%;
+        background-size: 280%;
         .submit__content {
           grid-template-columns: 50% 50%;
           .submit__form__title {
           font-size: 1.3rem;
         }
       }
-        .consent {
-          font-size: 0.7rem;
-        }
           }
-}
-
-.submit__content {
-  padding-top: 3rem;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  .submit__form__title {
-    padding-left: 3rem;
-    color: $colordark;
-    font-family: $font-gilroy;
-    font-size: 2.5rem;
-  }
-}
-.consent {
-  padding-left: 3rem;
-  font-size: 1.2em;
-  font-family: $font-gilroy;
-
-}
-  .inputname {
-    border: none;
-    border-radius: 1cap;
-    width: 40em;
-    height: 3em;
-    text-align: center;
-   margin-bottom: 2em;
-   font-size: 1vw;
-  }
-  .subline {
-    display: flex;
-    padding-bottom: 2rem;
-    gap: 14rem;
-  }
-
-
+    }    
 
 /* Header */
 .header {
