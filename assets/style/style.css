@@ -214,9 +214,6 @@ button {
   padding-bottom: 1rem;
 }
 @media (max-width: 1024px) {
-  .about {
-    margin: 0 auto;
-  }
   .about .picabout {
     display: none;
   }
