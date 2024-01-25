@@ -1113,6 +1113,9 @@ button {
   background-color: #400e19;
   color: #faeddd;
 }
+.footer .container-fluid {
+  width: 100%;
+}
 .footer .logo-image {
   width: 11vw;
   padding-top: 2rem;
@@ -1134,7 +1137,6 @@ button {
 .footer__disclaimer-text {
   font-family: "Gilroy", sans-serif;
   color: #faeddd;
-  padding-top: 0.5em;
   font-weight: bolder;
 }
 .footer__links-and-button {
