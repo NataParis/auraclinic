@@ -249,7 +249,7 @@ body {
 h2 {
   color: $colordark;
   font-family: $font-gilroy;
-  font-size: 2.3vw;
+  font-size: 2.3rem;
   font-style: normal;
   text-align: center;
 }
@@ -257,12 +257,12 @@ h3 {
   color: $colordark;
   font-family: $font-gilroy;
   font-style: italic;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 button {
-  width: 13vw;
-  height: 7vh;
+  width: 13rem;
+  height: 3rem;
   background-color: rgb(215, 188, 185);
   border: none;
   border-radius: 1cap;
@@ -292,9 +292,14 @@ button {
   .plus__title {
     padding-bottom: 1rem;
   }
+  @media (max-width: 1024px)  {
+    .picabout {
+      display: none;
+  }
+}
 }
 /* Block Registration form */
-.submit {
+.submit__form {
   max-width: 80vw;
   border-radius: 4cap;
   background-image: url(/assets/images/opacityback.jpg);
@@ -302,41 +307,59 @@ button {
   background-size: 100%;
   color: $colordark;
   font-family: $font-gilroy;
-  margin: auto 5rem;
+  margin: auto 2rem;
   max-width: 100%;
-}
-.submit__content {
-  padding-top: 3rem;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  .form__title {
-    padding-left: 5rem;
-    color: $colordark;
-    font-family: $font-gilroy;
-    font-size: 2vw;
+  .submit__content {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    .submit__form__title {
+      padding-left: 3rem;
+      color: $colordark;
+      font-family: $font-gilroy;
+      font-size: 2.5rem;
+    }
+    .inputname {
+      border: none;
+      border-radius: 1cap;
+      width: 85%;
+      height: 3em;
+      text-align: center;
+     margin-bottom: 2em;
+     font-size: 1vw;
+    }
   }
-}
-.consent {
-  padding-left: 5rem;
-  font-size: 1.2vw;
-  font-family: $font-gilroy;
-
-}
-  .inputname {
-    border: none;
-    border-radius: 1cap;
-    width: 40vw;
-    height: 6vh;
-    text-align: center;
-   margin-bottom: 2rem;
-   font-size: 1vw;
-  }
-  .subline {
-    display: flex;
-    gap: 5rem;
-    padding-bottom: 2rem;
-  }
-
+   .subline {
+      display: flex;
+      padding: 2rem 3rem;
+      gap: 14rem;
+         
+  .consent {
+        font-size: 1.2em;
+        font-family: $font-gilroy;
+        }
+    @media (max-width: 768px)  {
+          gap: 1rem;
+          font-size: 0.7rem;
+          .subline_button {
+            width: 40%;
+            height: 2rem;
+          }
+            }
+    }
+  @media (max-width: 1024px)  {
+    background-size:150%;
+      }
+  @media (max-width: 768px)  {
+        background-size: 280%;
+        .submit__content {
+          grid-template-columns: 50% 50%;
+          .submit__form__title {
+          font-size: 1.3rem;
+        }
+      }
+          }
+    }    
 
 /* Header */
 .header {
@@ -552,6 +575,9 @@ button {
   max-width: 100%;
   max-height: 100%;
   background-color: $colorlight;
+  @media (max-width: 1024px) {
+    max-width: 90%;
+  }
 
   .team__title {
     text-align: center;
@@ -580,13 +606,17 @@ button {
     margin: 0 auto 50px 0;
 
     @media (max-width: 1024px) {
-      gap: 2rem;
+      gap: 1rem;
+    }
+    @media (max-width: 940px) {
+      gap: 0.5rem;
     }
     @media (max-width: 767px) {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      gap: 3rem;
     }
 
     .team__person-one {
@@ -598,6 +628,7 @@ button {
         margin: 0 auto;
         border-radius: 15%;
       }
+      
       .team__doc-title-one {
         color: rgb(94, 23, 13);
         font-size: 1rem;
@@ -652,6 +683,10 @@ button {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        @media (max-width: 1024px) {
+          width: 40%;
+          font-size: 1vw;
+        }
         @media (max-width: 767px) {
           width: 30%;
           font-size: 2vw;
@@ -725,6 +760,10 @@ button {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        @media (max-width: 1024px) {
+          width: 40%;
+          font-size: 1vw;
+        }
         @media (max-width: 767px) {
           width: 30%;
           font-size: 2vw;
@@ -799,6 +838,10 @@ button {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        @media (max-width: 1024px) {
+          width: 40%;
+          font-size: 1vw;
+        }
         @media (max-width: 767px) {
           width: 30%;
           font-size: 2vw;
@@ -876,6 +919,10 @@ button {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        @media (max-width: 1024px) {
+          width: 40%;
+          font-size: 1vw;
+        }
         @media (max-width: 767px) {
           width: 30%;
           font-size: 2vw;
@@ -1098,6 +1145,9 @@ button {
   margin-top: 6rem;
   background-color: $colordark;
   color: $colorlight;
+  .container-fluid {
+    width: 100%;
+  }
   .logo-image {
     width: 11vw;
     padding-top: 2rem;
@@ -1122,7 +1172,6 @@ button {
   &__disclaimer-text {
     font-family: $font-gilroy;
     color: $colorlight;
-    padding-top: 0.5em;
     font-weight: bolder;
   }
   &__links-and-button {

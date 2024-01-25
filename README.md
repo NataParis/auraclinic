@@ -61,9 +61,10 @@ Files of SCSS type are placed in folder style and divided into smaller subtypes 
 - `_template.scss` - file for basic blocks of website used in the same format on different pages
 - `_components.scss` - file with styles for small repetitive components like buttons, product/service cards, interactive fields
 
-### SCSS (Sass) Files structure
+### Disclosure on resources
 
 The images were copied from the following free resources:
-www.freepik.com
-www.istockphoto.com
-www.canva.com
+
+- www.freepik.com
+- www.istockphoto.com
+- www.canva.com
