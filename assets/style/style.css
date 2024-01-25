@@ -165,7 +165,7 @@ body {
 
 h2 {
   color: #400e19;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 2.3rem;
   font-style: normal;
   text-align: center;
@@ -173,7 +173,7 @@ h2 {
 
 h3 {
   color: #400e19;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-style: italic;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -208,7 +208,7 @@ button {
   font-size: 20px;
   text-align: start;
   padding-left: 4rem;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
 }
 .about .plus__title {
   padding-bottom: 1rem;
@@ -230,7 +230,7 @@ button {
   background-repeat: no-repeat;
   background-size: 100%;
   color: #400e19;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   margin: auto 2rem;
   max-width: 100%;
 }
@@ -268,14 +268,14 @@ button {
 .submit__content .submit__form__title {
   padding-left: 3rem;
   color: #400e19;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 2.5rem;
 }
 
 .consent {
   padding-left: 3rem;
   font-size: 1.2em;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
 }
 
 .inputname {
@@ -330,7 +330,7 @@ button {
   }
 }
 .header .header-block .header-block__menu .nav-link {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #400e19;
@@ -382,7 +382,7 @@ button {
   }
 }
 .header .header-block .header-block__contacts .header-block__contacts_telephone {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #400e19;
@@ -423,7 +423,7 @@ button {
   color: #400e19;
 }
 .dropdown .dropdown_item {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #400e19;
@@ -445,7 +445,7 @@ button {
 .services__title {
   text-align: center;
   margin-bottom: 2.5rem;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   color: #400e19;
   margin-bottom: 50px;
   padding-top: 30px;
@@ -477,7 +477,7 @@ button {
 .category-title {
   font-size: 1.7rem;
   margin-bottom: 16px;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   color: #400e19;
 }
 
@@ -538,7 +538,7 @@ button {
 .team .team__title {
   text-align: center;
   color: #400e19;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 2vw;
   padding-top: 100px;
   margin: 0 auto 50px 0;
@@ -635,7 +635,7 @@ button {
 .team .team__people .team__person-one .team__doc-title-one {
   color: rgb(94, 23, 13);
   font-size: 1rem;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -666,7 +666,7 @@ button {
   }
 }
 .team .team__people .team__person-one .team__doc-title-one .team__names {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
@@ -687,7 +687,7 @@ button {
   }
 }
 .team .team__people .team__person-one .team__btn {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
@@ -730,7 +730,7 @@ button {
 .team .team__people .team__person-two .team__doc-title-two {
   color: rgb(94, 23, 13);
   font-size: 1rem;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -761,7 +761,7 @@ button {
   }
 }
 .team .team__people .team__person-two .team__doc-title-two .team__names {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
@@ -782,7 +782,7 @@ button {
   }
 }
 .team .team__people .team__person-two .team__btn {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
@@ -826,7 +826,7 @@ button {
 .team .team__people .team__person-three .team__doc-title-three {
   color: rgb(94, 23, 13);
   font-size: 1rem;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -857,7 +857,7 @@ button {
   }
 }
 .team .team__people .team__person-three .team__doc-title-three .team__names {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
@@ -878,7 +878,7 @@ button {
   }
 }
 .team .team__people .team__person-three .team__btn {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
@@ -922,7 +922,7 @@ button {
 .team .team__people .team__person-four .team__doc-title-four {
   color: rgb(94, 23, 13);
   font-size: 1rem;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
@@ -958,7 +958,7 @@ button {
   }
 }
 .team .team__people .team__person-four .team__doc-title-four .team__names {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 1.5rem;
   margin: 0 auto;
   text-align: center;
@@ -979,7 +979,7 @@ button {
   }
 }
 .team .team__people .team__person-four .team__btn {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   max-width: 100%;
   display: flex;
   text-align: center;
@@ -1045,7 +1045,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.6em;
@@ -1092,7 +1092,7 @@ button {
   align-items: center;
   gap: 1rem;
   color: #400e19;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 2vw;
   margin-bottom: 10px;
 }
@@ -1197,18 +1197,18 @@ button {
   margin-bottom: 2.5rem;
   padding-right: 2rem;
   text-decoration: none;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   color: #faeddd;
   font-size: 18px;
   font-weight: bolder;
 }
 .footer__disclaimer-text {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   color: #faeddd;
   font-weight: bolder;
 }
 .footer__links-and-button {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy", sans-serif;
   display: flex;
   gap: 10rem;
   font-size: 18px;
