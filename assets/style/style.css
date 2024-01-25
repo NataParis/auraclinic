@@ -342,12 +342,24 @@ button {
   margin-bottom: 50px;
   padding-top: 30px;
 }
+@media (max-width: 768px) {
+  .services__title {
+    font-size: 1.5rem;
+  }
+}
 
 .services__container {
   display: flex;
   text-align: center;
   align-content: space-around;
   margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .services__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .services-but {
@@ -357,6 +369,22 @@ button {
   border-radius: 0%;
   width: 10rem;
 }
+@media (max-width: 1024px) {
+  .services-but {
+    width: 8rem;
+  }
+}
+@media (max-width: 768px) {
+  .services-but {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 360px) {
+  .services-but {
+    width: 7rem;
+  }
+}
 .services-but .service__link {
   text-decoration: none;
   color: black;
@@ -365,12 +393,32 @@ button {
 .pict-size {
   max-width: 55%;
 }
+@media (max-width: 768px) {
+  .pict-size {
+    max-width: 30%;
+  }
+}
+@media (max-width: 360px) {
+  .pict-size {
+    max-width: 55%;
+  }
+}
 
 .category-title {
   font-size: 1.7rem;
   margin-bottom: 16px;
   font-family: "Gilroy", sans-serif;
   color: #400e19;
+}
+@media (max-width: 1024px) {
+  .category-title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 1.3rem;
+  }
 }
 
 .cosmetology-pict {
