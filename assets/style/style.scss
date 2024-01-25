@@ -344,105 +344,115 @@ button {
   max-width: 100%;
   background-color: $colorlight;
   margin: 1.5% 0 1% 0;
-  .header-block {
-    display: grid;
-    grid-template-columns: 20% 50% 10% 20%;
+}
+.header-block {
+  display: grid;
+  grid-template-columns: 20% 50% 10% 20%;
+  width: 95%;
+  height: 90%;
+  margin: 0 auto; 
+  @media (max-width: 1300px) {
+    margin: 0 0 0 1%;
+    grid-template-columns: 20% 45% 15% 20%;
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 30% 70%;
     width: 95%;
-    height: 90%;
     margin: 0 auto; 
+  }
+  @media (max-width: 425px) {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  &__menu {
+    padding-top: 3%;
+    @media (max-width: 425px) {
+      padding-top: 0;
+    }
+    .nav-link {
+      font-family: $font-gilroy;
+      font-weight: 400;
+      font-style: normal;
+      color: $colordark;
+      font-size: 1.6rem;
+      @media (max-width: 1024px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &_logo {
+    width: 100%;
+    @media (max-width: 425px) {
+      width: 70%;
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
     @media (max-width: 1024px) {
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 30% 70%;
+      justify-content: center;
     }
     @media (max-width: 425px) {
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-      text-align: center;
+      width: 50%;
+      margin: 0 auto;
   }
-    .header-block__menu {
-      padding-top: 3%;
-      @media (max-width: 425px) {
-        padding-top: 0;
+}
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 1024px) {
+      align-items: end;
     }
-      .nav-link {
-        font-family: $font-gilroy;
-        font-weight: 400;
-        font-style: normal;
-        color: $colordark;
-        font-size: 1.6rem;
-        @media (max-width: 1024px) {
-          font-size: 1.2rem;
-        }
+    @media (max-width: 425px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .header-block__contacts_telephone {
+      font-family: $font-gilroy;
+      font-weight: 400;
+      font-style: normal;
+      color: $colordark;
+      font-size: 1.6rem;
+      @media (max-width: 1065px) {
+        font-size: 1.4em;
       }
-    }
-    .header-block_logo {
-      width: 100%;
-      @media (max-width: 425px) {
-        width: 70%;
-    }
-    }
-    .header-block__button {
-      display: flex;
-      align-items: center;
       @media (max-width: 1024px) {
-        font-size: 0.8em;
-        justify-content: center;
+        font-size: 1.2rem;
       }
-      @media (max-width: 425px) {
-        width: 50%;
-        margin: 0 auto;
     }
-    }
-    .header-block__contacts {
+    .header-block__apps {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media (max-width: 1024px) {
-        align-items: end;
-      }
+      gap: 1em;
       @media (max-width: 425px) {
-        flex-direction: row;
-        justify-content: space-around;
+        margin-bottom: 3%;
       }
-      .header-block__contacts_telephone {
-        font-family: $font-gilroy;
-        font-weight: 400;
-        font-style: normal;
+      .header-block_icon {
+        width: 2.7rem;
         color: $colordark;
-        font-size: 1.6rem;
         @media (max-width: 1024px) {
-          font-size: 1.2rem;
-        }
-      }
-      .header-block__apps {
-        display: flex;
-        gap: 1em;
-        @media (max-width: 425px) {
-          margin-bottom: 3%;
-        }
-        .header-block_icon {
-          width: 2.7rem;
-          color: $colordark;
-          @media (max-width: 1024px) {
-            width: 1.9rem;
-          }
+          width: 1.9rem;
         }
       }
     }
   }
 }
+
 /* Burger-list */
 .dropdown {
-  .dropdown__colourless-button {
+  &__colourless-button {
     border: none;
     outline: none;
     background-color: $colorlight;
   }
-  .dropdown_list {
+  &_list {
     width: 2rem;
     color: $colordark;
   }
-  .dropdown_item {
+  &_item {
     font-family: $font-gilroy;
     font-weight: 400;
     font-style: normal;
@@ -515,14 +525,16 @@ button {
   padding: 2% 0 5% 0;
   text-align: center;
   background-color: $colorlight;
-  .results-block__gallery {
+  &__gallery {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
     @media (max-width: 1024px) {
       flex-direction: column;
       gap: 1em;
     }
-    .results-block__gallery-item {
+    &-item {
       border: 0.2em solid $colordark;
       border-radius: 5%;
       @media (max-width: 425px) {
@@ -956,17 +968,20 @@ button {
   font-family: $font-gilroy;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   border-radius: 0.7em;
   background-color: rgb(215, 188, 185);
   color: white;
   cursor: pointer;
-  width: 70%;
-  height: 50%;
-  @media (max-width:1920px){
-    width: 100%;
-    height: 70%;
- }
+  width: 100%;
+  height: 7vh;
+  @media (max-width: 1024px) {
+    font-size: 1.2em;
+    height: 10vh;
+  }
+  @media (max-width:1495px){
+    font-size: 1.4rem;
+  }
 }
 
 //review block//
