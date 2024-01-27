@@ -214,16 +214,38 @@ button {
   }
 }
 
-/* Block About */
+/* About us-block */
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 3rem;
+  width: 90%;
+}
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 3%;
+  }
+}
+@media (max-width: 1024px) {
+  .about .about__img {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about .about__img {
+    display: none;
+  }
 }
 .about h2 {
+  text-align: center;
   margin-bottom: 2rem;
+  padding-top: 1%;
 }
 .about .picabout {
-  border-radius: 2cap;
+  border-radius: 1em;
   flex-basis: 40%;
   max-height: 80vh;
   max-width: 40vw;
@@ -235,19 +257,24 @@ button {
   padding-left: 4rem;
   font-family: "Gilroy", sans-serif;
 }
+@media (max-width: 900px) {
+  .about .clinicscript {
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .about .clinicscript {
+    font-size: 1em;
+  }
+}
 .about .plus__title {
   padding-bottom: 1rem;
 }
-@media (max-width: 1024px) {
-  .about .picabout {
-    display: none;
-  }
-}
 
-/* Block Registration form */
+/* Submit block */
 .submit__form {
   max-width: 80vw;
-  border-radius: 4cap;
+  border-radius: 1em;
   background-image: url(/assets/images/opacityback.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -261,11 +288,23 @@ button {
   display: grid;
   grid-template-columns: 40% 60%;
 }
+@media (max-width: 490px) {
+  .submit__form .submit__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .submit__form .submit__content .submit__form__title {
   padding-left: 3rem;
   color: #400e19;
   font-family: "Gilroy", sans-serif;
   font-size: 2.5rem;
+}
+@media (max-width: 490px) {
+  .submit__form .submit__content .submit__form__title {
+    padding-left: 1rem;
+  }
 }
 .submit__form .submit__content .inputname {
   border: none;
@@ -293,6 +332,11 @@ button {
   .submit__form .subline .subline_button {
     width: 40%;
     height: 2rem;
+  }
+}
+@media (max-width: 490px) {
+  .submit__form .subline {
+    padding-left: 1rem;
   }
 }
 @media (max-width: 1024px) {
@@ -384,12 +428,23 @@ button {
 @media (max-width: 1024px) {
   .header-block__button {
     justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media (max-width: 765px) {
+  .header-block__button {
+    width: 80%;
+  }
+}
+@media (max-width: 545px) {
+  .header-block__button {
+    width: 100%;
   }
 }
 @media (max-width: 425px) {
   .header-block__button {
     width: 50%;
-    margin: 0 auto;
   }
 }
 .header-block__contacts {
@@ -482,12 +537,24 @@ button {
   margin-bottom: 50px;
   padding-top: 30px;
 }
+@media (max-width: 768px) {
+  .services__title {
+    font-size: 1.5rem;
+  }
+}
 
 .services__container {
   display: flex;
   text-align: center;
   align-content: space-around;
   margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .services__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .services-but {
@@ -497,6 +564,22 @@ button {
   border-radius: 0%;
   width: 10rem;
 }
+@media (max-width: 1024px) {
+  .services-but {
+    width: 8rem;
+  }
+}
+@media (max-width: 768px) {
+  .services-but {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 360px) {
+  .services-but {
+    width: 7rem;
+  }
+}
 .services-but .service__link {
   text-decoration: none;
   color: black;
@@ -505,12 +588,32 @@ button {
 .pict-size {
   max-width: 55%;
 }
+@media (max-width: 768px) {
+  .pict-size {
+    max-width: 30%;
+  }
+}
+@media (max-width: 360px) {
+  .pict-size {
+    max-width: 55%;
+  }
+}
 
 .category-title {
   font-size: 1.7rem;
   margin-bottom: 16px;
   font-family: "Gilroy", sans-serif;
   color: #400e19;
+}
+@media (max-width: 1024px) {
+  .category-title {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 1.3rem;
+  }
 }
 
 .cosmetology-pict {
@@ -551,7 +654,7 @@ button {
   border: 0.2em solid #400e19;
   border-radius: 5%;
 }
-@media (max-width: 425px) {
+@media (max-width: 550px) {
   .results-block__gallery-item {
     width: 80%;
     height: auto;
@@ -1069,7 +1172,7 @@ button {
 
 /* Separates blocks */
 .title {
-  padding: 1em 0 0.5em 0;
+  padding: 0 0 0.5em 0;
   font-family: Gilroy Medium;
   color: #400e19;
   font-size: 4em;
@@ -1088,17 +1191,16 @@ button {
   color: white;
   cursor: pointer;
   width: 100%;
-  height: 7vh;
-}
-@media (max-width: 1024px) {
-  .sign-up__button {
-    font-size: 1.2em;
-    height: 10vh;
-  }
+  height: 60%;
 }
 @media (max-width: 1495px) {
   .sign-up__button {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .sign-up__button {
+    font-size: 1.2em;
   }
 }
 
