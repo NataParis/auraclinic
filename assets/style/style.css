@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
@@ -152,12 +158,6 @@
   font-weight: normal;
   font-style: normal;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #faeddd;
   max-width: 100%;
@@ -357,7 +357,7 @@ button {
 }
 
 /* Header */
-.header {
+header {
   width: 100%;
   max-width: 100%;
   background-color: #faeddd;
@@ -526,6 +526,7 @@ button {
 .main-banner__gallery {
   width: 100%;
   max-width: 100%;
+  margin-bottom: 5%;
 }
 
 /* Services-block */
@@ -651,7 +652,7 @@ button {
   }
 }
 .results-block__gallery-item {
-  border: 0.2em solid #400e19;
+  border: 0.2em solid #A9A9A9;
   border-radius: 5%;
 }
 @media (max-width: 550px) {
