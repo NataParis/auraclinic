@@ -20,32 +20,16 @@ h3 {
   font-size: 1.5rem;
   font-weight: lighter;
 }
-button {
-  max-width: 100%;
-  height: 2.5rem;
+
+.btn-custom-main {
   background-color: rgb(215, 188, 185);
   border: none;
   border-radius: 10px;
-  font-size: 1.5vw;
+  font-size: 24px;
   color: white;
   margin: 0 auto;
-  @media (max-width: 1024px) {
-    width: 10%;
-    font-size: 1vw;
-  }
-  @media (max-width: 767px) {
-    width: 20%;
-    font-size: 2vw;
-  }
-  @media (max-width: 425px) {
-    width: 30%;
-    font-size: 3vw;
-  }
-  @media (max-width: 360px) {
-    width: 40%;
-    font-size: 3vw;
-  }
 }
+
 /* About us-block */
 .about {
   display: flex;
@@ -443,9 +427,8 @@ header {
   .team__people {
     max-width: 100%;
     max-height: 100%;
-    gap: 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 auto 50px 0;
 
@@ -777,50 +760,6 @@ header {
         }
       }
     }
-
-    /*  .team__person-fife{
-           max-width: 50%;
-            max-height:100%;
-            border-radius:50%;
-           
-            .team__img-girl-fife{
-               width: 100%;
-                margin: 0 auto;
-                border-radius:15%;
-            }
-            .team__doc-title-fife{
-               color:rgb(94, 23, 13);
-                font-size: 1rem;
-                font-family: $font-gilroy;
-                margin: 0 auto;
-                max-width: 100%;
-                max-height: 100%;
-               padding-top: 30px;
-               text-align: center;
-               margin-bottom: 20px;
-               .team__names{
-                font-family: $font-gilroy;
-                font-size: 1.5rem;
-                margin: 0 auto;
-                text-align: center;
-               }
-            }
-            .team__btn{
-               font-family: $font-gilroy;
-                max-width: 100%;
-                display: flex;
-                text-align: center;
-                font-size: 1.2vw;
-                border-radius: 10px;
-                background-color: rgb(215, 188, 185);
-                color:white;
-                cursor: pointer;
-                justify-content: center;
-                align-items:center;
-                margin: 0 auto;
-                
-               }
-        }  */
   }
 }
 
@@ -885,19 +824,19 @@ header {
   @media (max-width:1024px){
       background-size: 30%;
       padding-top: 50px;
-   }
+}
   @media (max-width:768px){
       background-size: 40%;
-   }
-   @media (max-width:425px){
+}
+  @media (max-width:425px){
       padding-top: 60px;
-   }
-   @media (max-width:360px){
+}
+  @media (max-width:360px){
     padding-top: 60px;
     background-image:none;
- }
+}
 
-   .review__title-logo{
+  .review__title-logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -906,8 +845,7 @@ header {
     font-family: $font-gilroy;
     font-size: 2vw;
     margin-bottom: 10px;
-  
-   }
+}
   .review__peoplesays {
     display: flex;
     justify-content: center;
@@ -943,7 +881,6 @@ header {
         max-height: 100%;
       }
 
-
       .review__img-firstperson {
         padding: 15px;
         margin: 0 auto;
@@ -977,21 +914,13 @@ header {
       }
     }
   }
-/*   .review__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: $colorlight;
-    border-radius: 0%;
-    color: black;
-    border: dotted 1px $colordark;
-    max-width: 2rem;
-    margin-bottom: 80px;
-  } */
 }
-
-//end of review block//
+//Registration form//
+.btn-custom-form {
+  background-color: rgb(215, 188, 185);
+  border-radius: 10px;
+  color: white;
+}
 
 // Footer styles //
 .footer {
