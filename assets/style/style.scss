@@ -185,15 +185,23 @@ header {
     @media (max-width: 425px) {
       padding-top: 0;
     }
-    .nav-link {
+    .nav-link{
+      color: $colordark;
       font-family: $font-gilroy;
       font-weight: 400;
       font-style: normal;
-      color: $colordark;
       font-size: 1.6rem;
       @media (max-width: 1024px) {
         font-size: 1.2rem;
       }
+    }
+    a:visited {
+      color: $colordark;
+      text-decoration: underline;
+    }
+    a:hover{
+      color: $colordark;
+      text-decoration: underline;
     }
   }
   &_logo {
@@ -402,6 +410,7 @@ header {
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
+  margin-bottom: 100px;
   background-color: $colorlight;
   @media (max-width: 1024px) {
     max-width: 90%;
@@ -431,12 +440,13 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto 50px 0;
+    gap: 4rem;
 
     @media (max-width: 1024px) {
-      gap: 1rem;
+      gap: 3rem;
     }
     @media (max-width: 940px) {
-      gap: 0.5rem;
+      gap: 2.5rem;
     }
     @media (max-width: 767px) {
       display: flex;
@@ -469,9 +479,9 @@ header {
         @media (max-width: 1024px) {
           max-width: 300px;
           max-height: 250px;
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
-        @media (max-width: 866px) {
+        @media (max-width: 885px) {
           font-size: 0.7rem;
         }
         @media (max-width: 767px) {
@@ -547,9 +557,9 @@ header {
         @media (max-width: 1024px) {
           max-width: 300px;
           max-height: 250px;
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
-        @media (max-width: 866px) {
+        @media (max-width: 885px) {
           font-size: 0.7rem;
         }
         @media (max-width: 767px) {
@@ -625,9 +635,9 @@ header {
         @media (max-width: 1024px) {
           max-width: 300px;
           max-height: 250px;
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
-        @media (max-width: 866px) {
+        @media (max-width: 885px) {
           font-size: 0.7rem;
         }
         @media (max-width: 767px) {
@@ -703,7 +713,10 @@ header {
         @media (max-width: 1024px) {
           max-width: 300px;
           max-height: 250px;
-          font-size: 1rem;
+          font-size: 0.9rem;
+        }
+        @media (max-width: 885px) {
+          font-size: 0.7rem;
         }
         @media (max-width: 767px) {
           font-size: 1.5rem;
@@ -914,6 +927,37 @@ header {
       }
     }
   }
+  .review__btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    font-family: $font-gilroy;
+    max-width: 100%;
+    max-height: 8rem;
+    text-align: center;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    cursor:pointer;
+    background-color: rgb(235, 213, 207, 0.5);
+    border:none;
+    color:#593f3f;
+    padding: 10px;
+    @media (max-width: 1024px) {
+      font-size: 1.5vw;
+    }
+    @media (max-width: 768px) {
+      font-size: 2vw;
+      max-height: 10rem;
+      padding: 15px;
+    }
+    @media (max-width: 425px) {
+      font-size: 3vw;
+      max-height: 10rem;
+      padding: 15px;
+    }
+} 
 }
 //Registration form//
 .btn-custom-form {
