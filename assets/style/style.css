@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url("/assets/fonts/Gilroy-Regular.ttf") format("truetype");
@@ -152,12 +158,6 @@
   font-weight: normal;
   font-style: normal;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #faeddd;
   max-width: 100%;
@@ -179,39 +179,13 @@ h3 {
   font-weight: lighter;
 }
 
-button {
-  max-width: 100%;
-  height: 2.5rem;
+.btn-custom-main {
   background-color: rgb(215, 188, 185);
   border: none;
   border-radius: 10px;
-  font-size: 1.5vw;
+  font-size: 24px;
   color: white;
   margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  button {
-    width: 10%;
-    font-size: 1vw;
-  }
-}
-@media (max-width: 767px) {
-  button {
-    width: 20%;
-    font-size: 2vw;
-  }
-}
-@media (max-width: 425px) {
-  button {
-    width: 30%;
-    font-size: 3vw;
-  }
-}
-@media (max-width: 360px) {
-  button {
-    width: 40%;
-    font-size: 3vw;
-  }
 }
 
 /* About us-block */
@@ -357,7 +331,7 @@ button {
 }
 
 /* Header */
-.header {
+header {
   width: 100%;
   max-width: 100%;
   background-color: #faeddd;
@@ -402,16 +376,24 @@ button {
   }
 }
 .header-block__menu .nav-link {
+  color: #400e19;
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #400e19;
   font-size: 1.6rem;
 }
 @media (max-width: 1024px) {
   .header-block__menu .nav-link {
     font-size: 1.2rem;
   }
+}
+.header-block__menu a:visited {
+  color: #400e19;
+  text-decoration: underline;
+}
+.header-block__menu a:hover {
+  color: #400e19;
+  text-decoration: underline;
 }
 .header-block_logo {
   width: 100%;
@@ -526,6 +508,7 @@ button {
 .main-banner__gallery {
   width: 100%;
   max-width: 100%;
+  margin-bottom: 5%;
 }
 
 /* Services-block */
@@ -651,7 +634,7 @@ button {
   }
 }
 .results-block__gallery-item {
-  border: 0.2em solid #400e19;
+  border: 0.2em solid #A9A9A9;
   border-radius: 5%;
 }
 @media (max-width: 550px) {
@@ -665,6 +648,7 @@ button {
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
+  margin-bottom: 100px;
   background-color: #faeddd;
 }
 @media (max-width: 1024px) {
@@ -692,63 +676,20 @@ button {
 .team .team__people {
   max-width: 100%;
   max-height: 100%;
-  gap: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0 auto 50px 0;
-  /*  .team__person-fife{
-         max-width: 50%;
-          max-height:100%;
-          border-radius:50%;
-
-          .team__img-girl-fife{
-             width: 100%;
-              margin: 0 auto;
-              border-radius:15%;
-          }
-          .team__doc-title-fife{
-             color:rgb(94, 23, 13);
-              font-size: 1rem;
-              font-family: $font-gilroy;
-              margin: 0 auto;
-              max-width: 100%;
-              max-height: 100%;
-             padding-top: 30px;
-             text-align: center;
-             margin-bottom: 20px;
-             .team__names{
-              font-family: $font-gilroy;
-              font-size: 1.5rem;
-              margin: 0 auto;
-              text-align: center;
-             }
-          }
-          .team__btn{
-             font-family: $font-gilroy;
-              max-width: 100%;
-              display: flex;
-              text-align: center;
-              font-size: 1.2vw;
-              border-radius: 10px;
-              background-color: rgb(215, 188, 185);
-              color:white;
-              cursor: pointer;
-              justify-content: center;
-              align-items:center;
-              margin: 0 auto;
-
-             }
-      }  */
+  gap: 4rem;
 }
 @media (max-width: 1024px) {
   .team .team__people {
-    gap: 1rem;
+    gap: 3rem;
   }
 }
 @media (max-width: 940px) {
   .team .team__people {
-    gap: 0.5rem;
+    gap: 2.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -784,10 +725,10 @@ button {
   .team .team__people .team__person-one .team__doc-title-one {
     max-width: 300px;
     max-height: 250px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
-@media (max-width: 866px) {
+@media (max-width: 885px) {
   .team .team__people .team__person-one .team__doc-title-one {
     font-size: 0.7rem;
   }
@@ -879,10 +820,10 @@ button {
   .team .team__people .team__person-two .team__doc-title-two {
     max-width: 300px;
     max-height: 250px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
-@media (max-width: 866px) {
+@media (max-width: 885px) {
   .team .team__people .team__person-two .team__doc-title-two {
     font-size: 0.7rem;
   }
@@ -975,10 +916,10 @@ button {
   .team .team__people .team__person-three .team__doc-title-three {
     max-width: 300px;
     max-height: 250px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
-@media (max-width: 866px) {
+@media (max-width: 885px) {
   .team .team__people .team__person-three .team__doc-title-three {
     font-size: 0.7rem;
   }
@@ -1071,7 +1012,12 @@ button {
   .team .team__people .team__person-four .team__doc-title-four {
     max-width: 300px;
     max-height: 250px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 885px) {
+  .team .team__people .team__person-four .team__doc-title-four {
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 767px) {
@@ -1211,18 +1157,6 @@ button {
   background-image: url(../images/review/gold-leaf.webp);
   padding-top: 70px;
   margin: 0 auto;
-  /*   .review__btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      background-color: $colorlight;
-      border-radius: 0%;
-      color: black;
-      border: dotted 1px $colordark;
-      max-width: 2rem;
-      margin-bottom: 80px;
-    } */
 }
 @media (max-width: 1024px) {
   .review {
@@ -1328,6 +1262,49 @@ button {
   margin: 0 auto;
   margin-bottom: 5px;
   grid-row: 5/6;
+}
+.review .review__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  font-family: "Gilroy", sans-serif;
+  max-width: 100%;
+  max-height: 8rem;
+  text-align: center;
+  font-size: 1.3vw;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(235, 213, 207, 0.5);
+  border: none;
+  color: #593f3f;
+  padding: 10px;
+}
+@media (max-width: 1024px) {
+  .review .review__btn {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .review .review__btn {
+    font-size: 2vw;
+    max-height: 10rem;
+    padding: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .review .review__btn {
+    font-size: 3vw;
+    max-height: 10rem;
+    padding: 15px;
+  }
+}
+
+.btn-custom-form {
+  background-color: rgb(215, 188, 185);
+  border-radius: 10px;
+  color: white;
 }
 
 .footer {
